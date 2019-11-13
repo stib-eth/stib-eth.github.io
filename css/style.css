@@ -1873,7 +1873,7 @@ color: #000;
   .info-contact {
     color: var(--almost-black);
     margin-bottom: 10px;
-    text-align: left;
+    /* text-align: left; */
 }
 .info-contact img {
   margin-bottom: -4px;
@@ -1885,9 +1885,12 @@ color: #000;
   transition: .3s;
 }
 .grid-3-col {
+  border-top: 1px solid #e2e2e2;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
           /* footer   */
           .wrapper-icon-footer .nav-link img {
             width: 19px;
