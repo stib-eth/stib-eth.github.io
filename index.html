@@ -34,16 +34,26 @@
 
 
     <!-- menu -->
-    <div id="wrapper-all-web">
+    <div id="wrapper-all-web" style="
+    overflow-x: hidden;
+">
         <div class="banner" id="home">
             <nav class="navbar navbar-default">
                 <div class="navbar-header navbar-left">
                     <div style="float: left" class="logo_header">
                         <a href="file:///E:/git2019/stib-eth.github.io/index.html">
-                        <img src="img/svg/logo_stib_no_co.svg" style="width: 83px; height: 35px">
+                            <img src="img/svg/logo_stib_no_co.svg" style="width: 83px; height: 35px">
                         </a>
                     </div>
                 </div>
+                     <!-- icon for reponsive mobile open menu -->
+        <div id="icon_menu">
+            <i class="fas fa-bars fa-2x" style="color: #ff9f1a; font-size: 20px;" id="icon_menu1"></i>
+        </div>
+        <div id="icon_menu_close">
+            <img src="img/svg/icons8-delete.svg" alt="" class="img-fluid" style="max-width: 80%;">
+        </div>
+        <!-- menu -->
                 <div class="topnav" id="myTopnav">
                     <a href="#p2p"><span data-hover="Giới thiệu">P2P</span></a>
                     <a href="#token" class="scroll"><span data-hover="Tài nguyên">TOKEN</span></a>
@@ -53,24 +63,24 @@
             </nav>
         </div>
         <!----- p2p ----->
-        <div class="css-p2p"  id="p2p">
+        <div class="css-p2p" id="p2p">
             <div class="hero">
                 <div class="columnText">
                     <div class="leftContentText">
                         <p class="sub-title" style="color:white; font-style: italic;
                     font-weight: bold;font-size: 20px;">Giao Dịch (mua/bán
                             + cho vay/mượn) P2P trên Hợp Đồng Thông Minh StiB</p>
-                        <!-- <div class="bannerfb"> <img src="img/back/banner-pr-fb.jpg" style="
-                                width: 428px;height: 479px; object-fit: cover;
-                            "></div> -->
-                        <div class="storeButtonContainer">
+                        <div class="bannerfb"> <img src="img/back/banner-pr-fb.jpg" style="
+                                width: 490px;height: 479px; object-fit: cover;
+                            "></div>
+                        <!-- <div class="storeButtonContainer">
                             <div class="storebutton"><a class="storebutton"
                                     href="https://testflight.apple.com/join/3NpiP8PC" target="_blank"> <img
                                         src="img/back/Apple-App-Store-logo.jpg" width="200"
                                         alt="Apple Store Button"></a>
                                 <div class="storeButtonContainer"></div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -220,6 +230,7 @@
                     <span class="letter" data-letter="E">E</span>
                     <span class="letter" data-letter="N">N</span>
                 </div>
+            </div>
                 <p class="tile-copy typography-retail-buy-copy">'Sti' là tên của Token trong hệ sinh thái của StiB
                     và
                     người giữ token sẽ có quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai.</p>
@@ -227,7 +238,7 @@
                         data-analytics-region="learn more" aria-label="Learn more about buying iPhone from Apple"
                         class="icon-wrapper typography-tile-copy"></a></p>
 
-            </div>
+         
 
             <div class="tile-wrapper tile-apple-card ">
                 <div class="content-wrapper">
@@ -264,11 +275,11 @@
                             </div>
                             <p class="typography-tile-copy tile-copy-2">
                             </p>
-                            <p class="tile-cta"><a href="/apple-tv-plus/"
+                            <!-- <p class="tile-cta"><a href="/apple-tv-plus/"
                                     data-analytics-title="learn more about apple tv plus"
                                     data-analytics-region="learn more" aria-label="Learn more about Apple tv+."
                                     class="icon-wrapper typography-tile-copy tile-cta"><span
-                                        class="icon icon-after more"></span></a></p>
+                                        class="icon icon-after more"></span></a></p> -->
                         </div>
                     </div>
                 </div>
@@ -363,8 +374,6 @@
             </div>
             <!-- </div> -->
         </div>
-
-
         <div class="welcome-1 text-center">
             <h1> StiB sẽ làm gì</h1>
             <p>
@@ -413,8 +422,7 @@
             <div class="stib-pay">
 
                 <div class="welcome-1 text-center">
-                    <h1>S<span style="text-transform: lowercase;">ti</span>B PAY <img src="img/svg/smartphone-call.svg"
-                            alt="lostimg" class="phone-icon"></h1>
+                    <h1>S<span style="text-transform: lowercase;">ti</span>B PAY</h1>
                     <p>StiB PAY <i class="fas fa-arrow-right"></i> StiB Charity <i class="fas fa-plus-circle"></i>
                         StiB
                         Universal</p>
@@ -437,7 +445,7 @@
 
             </div>
         </div>
-        <div id="cf6_image" class="shadow"></div>
+        <!-- <div id="cf6_image" class="shadow"></div> -->
         <div class="row">
             <div class="wallet_cf6">
                 <div class="wrapper-content qr-eth">
@@ -466,7 +474,64 @@
             <h1>Đồng Đội</h1>
             <p>"We decentralize with everyone in mind!"</p>
         </div>
-        <div class="profile">
+        <div id="member">
+            <div class="member-child">
+                <div class="member-img">
+                    <img src="https://stib-eth.github.io/img/back/67671345_904843066548685_8822868947842891776_n.jpg" />
+                    <p>Hoang Dung</p>
+                    <p>Developer</p>
+                </div>
+                <div class="member-bio">
+                    <h1>KĨ NĂNG</h1>
+                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
+                </div>
+            </div>
+            <div class="member-child">
+                <div class="member-img">
+                    <img src="img/back/ben.jpg" />
+                    <p>Ben Le</p>
+                    <p>Founder/CEO at StiB</p>
+                </div>
+                <div class="member-bio">
+                    <h1>KĨ NĂNG</h1>
+                    <p>Tôi chủ yếu làm việc với My SQL, Objective-C, Ethereum, BlockChain.</p>
+                </div>
+            </div>
+            <div class="member-child">
+                <div class="member-img">
+                    <img src="img/back/tung.jpg" />
+                    <p>Hoang Dung</p>
+                    <p>Developer</p>
+                </div>
+                <div class="member-bio">
+                    <h1>KĨ NĂNG</h1>
+                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
+                </div>
+            </div>
+            <div class="member-child">
+                <div class="member-img">
+                    <img src="https://stib-eth.github.io/img/back/67671345_904843066548685_8822868947842891776_n.jpg" />
+                    <p>Hoang Dung</p>
+                    <p>Developer</p>
+                </div>
+                <div class="member-bio">
+                    <h1>KĨ NĂNG</h1>
+                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
+                </div>
+            </div>
+            <!-- <div class="member-child">
+                <div class="member-img1">
+                    <img src="https://stib-eth.github.io/img/back/67671345_904843066548685_8822868947842891776_n.jpg" />
+                    <p>Hoang Dung</p>
+                    <p>Developer</p>
+                </div>
+                <div class="member-bio">
+                    <h1>KĨ NĂNG</h1>
+                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div class="profile">
             <aside class="profile-card">
 
                 <header>
@@ -588,9 +653,9 @@
             <aside class="profile-card">
 
                 <header>
-                    <!-- <a href="https://tutsplus.com"> -->
+                   
                         <img src="img/back/hung.jpg">
-                    <!-- </a> -->
+                 
                     <h1>PV Định</h1>
                     <h2>- Lập Trình Viên -</h2>
                 </header>
@@ -622,9 +687,9 @@
             <aside class="profile-card">
 
                 <header>
-                    <!-- <a href="https://tutsplus.com"> -->
+                
                         <img src="img/back/tung.jpg">
-                    <!-- </a> -->
+                
                     <h1>Hưng Nguyễn</h1>
                     <h2>- Full Stack Web Developer -</h2>
                 </header>
@@ -651,7 +716,7 @@
                     </li>
                 </ul>
             </aside>
-        </div>
+        </div> -->
         <!-- start contact -->
         <div id="contact" id="contact">
             <div class="contact1">
@@ -713,6 +778,19 @@
         </footer>
     </div>
     </div>
+    <script>
+        const hoverMemberChild = document.getElementsByClassName('member-child');
+        for (let index = 0; index < hoverMemberChild.length; index++) {
+            hoverMemberChild[index].addEventListener("mouseover", () => {
+                const bio = hoverMemberChild[index].childNodes[3];
+                bio.style.display = "block"
+            });
+            hoverMemberChild[index].addEventListener("mouseleave", () => {
+                const bio = hoverMemberChild[index].childNodes[3];
+                bio.style.display = "none"
+            });
+        }
+    </script>
     <script src="jquery/jquery-3.3.1.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/js.js"></script>
