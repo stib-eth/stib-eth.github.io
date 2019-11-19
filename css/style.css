@@ -2038,24 +2038,22 @@ ul {
 .fa, .fas {
   font-weight: 900;
 }
-          /* reponsive */
-          @media (max-width: 360px) {
-            .navbar navbar-default{
-              width: 790px;
-            }
-          }  
-             /* hambuger */
-          @media (max-width: 360px){
+
+       /* reponsive */
+@media (max-width: 360px) {
+  .navbar navbar-default{
+   width: 790px;
+      }
+      /* hambuger */
 #icon_menu_close {
     cursor: pointer;
     width: 30px;
     height: 30px;
     z-index: 1000;
-}}
+}
 #icon_menu_close {
   display: none;
 }
-@media (max-width: 360px){
 .container_header .sub_menu {
     visibility: hidden;
     position: fixed;
@@ -2080,93 +2078,69 @@ ul {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
-}}
-@media (max-width: 360px){
+}
 .container_header .sub_menu.active {
     visibility: visible;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-}}
-@media (max-width: 360px){
+}
 #icon_menu {
     display: block;
     cursor: pointer;
-}}
-@media (max-width: 360px){
+}
 #icon_menu_close.active {
     display: block!important;
-}}
+}
        /* p2p */
-@media (max-width: 360px) {
   .wrapper-all-web{
     width: 100%;
-  }
 }     
-@media (max-width: 360px) {
-  .topnav{
+.topnav{
    flex-direction: row;
-  }
 }  
-@media (max-width: 360px) {
-  .bannerfb{
+.bannerfb{
     visibility: hidden;
-  }
+  
 }    
-@media (max-width: 360px) {
 .h1 {
   font-size: 1.6rem;
   line-height: 2rem;
   color: #fff;
 }
-}
-/* @media (max-width: 360px) {
-  .bannerfb{
-    width: 50px;
-  }
-}       */
- @media (max-width: 360px) {
-  .css-p2p{
+.css-p2p{
    display: flex;
    flex-direction: column;
-  }
 }
-  @media (max-width: 360px){
-  .bigPhone {
+.bigPhone {
       width: 100%;
      
-  }}
-  @media (max-width: 360px) {
-    .heroVid{
+  }
+.heroVid{
 padding-top: 20px ;
-    }
   }  
   /* Token */
-  @media (max-width: 360px) {
-    .foo{
-      width: 500px;
-      display: flex;
-      flex-direction: column;
-    }
-  }  
-  @media (max-width: 360px) {
-    .letter{
+.foo{
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+}  
+.tile-buy .tile-copy{
+  justify-content: center;
+}
+.letter{
 position: relative;
-    }
+    
   }  
-  @media (max-width: 360px){
-    .tile-buy{
+.tile-buy{
       width: 700px;
        display: flex;
        flex-direction: column;
-    }}
-    @media (max-width: 360px){
-      .tile-apple-card .apple-card-image {
+    }
+.tile-apple-card .apple-card-image {
           width: 50%;
-          object-fit: cover;
-         
-      }}
-  @media (max-width: 360px){
+          object-fit: cover;         
+      }
 .hero {
   width: 57%;
   padding: 46px 91px;
@@ -2175,14 +2149,18 @@ position: relative;
   -webkit-align-items: center;
   align-items: center;
 }
-  }
-  @media (max-width: 360px) {
-    .integrations{
+.integrations{
       width: 94%;
      display: flex;
      flex-direction: column;
-    }
   }  
+  .page {
+    width: 95%;
+    object-fit: cover;
+   
+}
+
+  
   @media (max-width: 768px){
  .protocol {  
     -webkit-flex-basis: 38%;
@@ -2193,9 +2171,6 @@ position: relative;
     flex-grow: 2;
 }}
         /* charity */
-        @media (max-width: 360px){
-          .page {
-              width: 95%;
-              object-fit: cover;
-             
-          }}
+
+
+        
