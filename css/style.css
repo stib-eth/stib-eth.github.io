@@ -2056,6 +2056,44 @@ ul {
   display: none;
 }
 @media (max-width: 360px){
+.container_header .sub_menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #191919;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}}
+@media (max-width: 360px){
+.container_header .sub_menu.active {
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}}
+@media (max-width: 360px){
+#icon_menu {
+    display: block;
+    cursor: pointer;
+}}
+@media (max-width: 360px){
 #icon_menu_close.active {
     display: block!important;
 }}
