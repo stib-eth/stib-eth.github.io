@@ -54,7 +54,6 @@ ul{
     text-align: center;
 }
 .click{
-    margin-block-start: -80px;
     text-align: center;
 }
 .example_e {
@@ -68,6 +67,9 @@ ul{
     display: inline-block;
     transition: all 0.3s ease 0s;
     }
+    li.nav-item {
+        font-size: 16px;
+    }
 .example_e:hover {
     border: none;
     background: #f38320;
@@ -79,7 +81,9 @@ ul{
     display: inline-block;
     transition: all 0.3s ease 0s;
         }
-  
+        a.example_e {
+            text-decoration: none;
+        }
 .background-banner .wrapper-img{
     max-width: 1100px;
 }
@@ -123,13 +127,13 @@ ul{
     display: block;
 }
 .grid-item {
-    padding-top: 70px;
-    /* padding-bottom: 13px; */
-    /* padding-block-end: 8px; */
+    align-items: center;
+    padding-top: 88px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
 }
-a{
-    text-decoration: none;
-}
+
 li {
     list-style: none;
     }
@@ -175,6 +179,7 @@ li {
     animation: fadein 7s;
   }
   p.sub-title {
+    font-size: 15px;
     color: white;
 }
 video.heroVid {
@@ -274,7 +279,7 @@ video.heroVid {
         .tieude-future {
             position: absolute;
             /* bottom: 0; */
-            /* left: 75px; */
+            left: 75px;
             padding: 13px;
             background: #c67c3b;
             -webkit-box-shadow: darkorange;
@@ -299,32 +304,37 @@ video.heroVid {
             opacity: 1;
         }
         .flex-text-banner.text-center {
-            justify-content: center;
             color: rgb(252, 247, 247);
             text-align: center;
             flex: auto;
+            padding-block-start: 380px;
         }
         .button_e {
-            color: black;
             border: none;
-            background: #8fc342;
-            padding: 15px 20px;
-            text-transform: uppercase;              
+            background: #323633;
+            color: #ffffff !important;
+            font-weight: 100;
+            padding: 18px 31px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            display: inline-block;
             transition: all 0.3s ease 0s;
-            margin: 0 auto;
-            font-size:15px ;
         }
         .button_e:hover {
             border: none;
-        background: #f5f5f5;
-        color: #ffffff !important;
-        font-weight: 100;
-        padding: 15px 20px;
-        text-transform: uppercase;
-        border-radius: 6px;
-        display: inline-block;
-        transition: all 0.3s ease 0s;
+            background: #8BC34A;
+            color: #000000 !important;
+            font-weight: 100;
+            padding: 18px 31px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
         }  
+        a.button_e {
+            text-decoration: none;
+        }
+        
         /* end charity */
         .grid-3-col {
             -ms-grid-columns: 1fr 1fr 1fr;
@@ -384,26 +394,31 @@ video.heroVid {
   .slideshow-container {
     margin-top: 50px;
 }
+.item{
+    width: 50%;
+    margin: 0 auto;
+}
+.carousel-indicators {
+    bottom: -9px;
+}
 @media (max-width: 1024px){
     .heroVid {
         max-width: 45%;
         margin-inline-start: 50px;
     }
     .wrapper-text-banner {
-        height: 78vh;
-        width: 77vh;
+        width: 100%;
     }
     }
     @media (max-width: 1020px){
     .wrapper-text-banner {
-        height: 88vh;
-        width: 141vh;
+        width: 100%;
     }
 }
 @media (max-width: 997px){
     .heroVid {
-        max-width: 33%;
-        margin-inline-start: 142px;
+        max-width: 26%;
+        margin-inline-start: -89px;
     }
     .navbar navbar-default{
         width: 500px;
@@ -417,8 +432,7 @@ video.heroVid {
         margin: 0 5px;
     }
     .wrapper-text-banner {
-        height: 96vh;
-        width: 155vh;
+        width: 100%;
     }
     .grid-item{
         padding-top: 15px;
@@ -514,10 +528,14 @@ video.heroVid {
        display: none;
     }
     }
+@media (max-width: 996px){
+    .banner-content {
+        padding-top: 110px;
+    }
 @media (max-width: 768px){
 .heroVid {
-    max-width: 33%;
-    margin-inline-start: 142px;
+    max-width: 26%;
+    margin-inline-start: -89px;
 }
 .navbar navbar-default{
     width: 500px;
@@ -540,7 +558,7 @@ video.heroVid {
     /* display: table-column-group; */
 }
 div#icon_menu {
-    max-width: 10%;
+    width: 45px;
 }
 #icon_menu{
     display: block;
@@ -615,14 +633,13 @@ div#icon_menu {
   }
          /* p2p */
          .wrapper-text-banner {
-            height: 101vh;
-            width: 76vh;
+            width: 100%;
         }
   .topnav{
      flex-direction: row;
   }  
   .banner-content {
-    padding-top: 90px;
+    padding-top: 112px;
 }
   .bannerfb {
    display: none;
@@ -632,17 +649,19 @@ div#icon_menu {
 @media (max-width: 761px){
 .heroVid {
     max-width: 45%;
-    margin-inline-start: 50px;
+   
 }
 .tieude-future {
     visibility: hidden;
 }
+.wrapper-text-banner {
+    width: 100%;
+}
 }
 
-@media (max-width: 424px) {
+@media (max-width: 420px) {
 .wrapper-text-banner {
-    height: 57vh;
-    width: 70vh;
+    width: 100%;
 }
 .tieude-future {
     visibility: hidden;
@@ -650,8 +669,7 @@ div#icon_menu {
 }
 @media (max-width: 418px) {
     .wrapper-text-banner {
-        height: 56vh;
-        width: 67vh;
+        width: 100%;
     }
     .tieude-future {
         visibility: hidden;
@@ -671,7 +689,7 @@ div#icon_menu {
     padding-top: 15px;
 }
 .heroVid{
-    margin-inline-start: 10px;
+    margin-inline-start: -96px;
     max-width: 50%;
 
 }
@@ -807,13 +825,15 @@ img#img-roadmap-mobile{
 
 /* charity */
 .wrapper-text-banner{
-    height: 50vh;
-    width: 57vh;
+    width: 100%;
 }
 .banner-content{
     margin-block-start: 110px;
 }
-.flex-text-banner.text-center h1{
+.flex-text-banner.text-center h1 {
+    border-radius: 20px;
+    border: 1px solid #8de25c;
+    margin-block-start: -193px;
     opacity: 0.6;
     background-size: cover;
     background-position: center center;
@@ -847,7 +867,6 @@ img#img-roadmap-mobile{
 }} */
 @media (max-width: 375px){
 .heroVid {
-    margin-inline-start: 0px;
     max-width: 50%;
 }
 .banner-content {
@@ -857,11 +876,23 @@ img#img-roadmap-mobile{
     visibility: hidden;
 }
 .wrapper-text-banner {
-    height: 54vh;
-    width: 57vh;
+    width: 100%;
 }
 .tieude-2 {
     margin: -10px -4px;
+}
+.flex-text-banner.text-center h1 {
+    font-size: 25px;
+    border-radius: 30px;
+    border: 1px solid #8de25c;
+    margin-block-start: 20px;
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: -2px;
+    background: #f0f0f0;
+    color: #000000;
 }
 }
 @media (max-width: 360px) {
@@ -872,8 +903,21 @@ img#img-roadmap-mobile{
     display: block;
     margin-right: 2px;
   }
+  .flex-text-banner.text-center h1 {
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid #8de25c;
+    margin-block-start: -102px;
+    opacity: 0.6;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: -2px;
+    background: #f0f0f0;
+    color: #000000;
+}
   .banner-content {
-    margin-block-start: 10px;
+    margin-block-start: 27px;
 }
   #myTopnav.active{
     visibility: visible
@@ -895,7 +939,8 @@ img#img-roadmap-mobile{
     align-items: center;
   }
   .heroVid {
-    max-width: 45%;
+    width: 50%;
+    margin-inline-start: -87px;
 }
         /* hambuger */
   #icon_menu_close {
@@ -950,31 +995,41 @@ img#img-roadmap-mobile{
    display: none;
 }
 .wrapper-text-banner {
-    height: 57vh;
-    width: 57vh;
+    width: 100%;
 }
 }
-@media (max-width: 360px){
-.wrapper-text-banner {
-    height: 57vh;
-    width: 57vh;
-}
-}
+
 @media (max-width: 320px){
     .heroVid {
-        max-width: 45%;
-        padding-inline-start: 38px;
+        width: 50%;
+        margin-inline-start: -88px;
     }
-    .tieude-future {
-        visibility: hidden;
+    .Fonttitle h2 {
+        margin: 103px auto;
+        font-size: 46px;
+    }
+    .flex-text-banner.text-center h1 {
+        border-radius: 20px;
+        border: 1px solid #8de25c;
+        margin-block-start: -120px;
+        opacity: 0.6;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-size: -2px;
+        background: #f0f0f0;
+        color: #000000;
+        font-size: 27px;
     }
     .wrapper-text-banner {
-        height: 55vh;
-        width: 40vh;
+        width: 100%;
     }
-    .flex-text-banner.text-center h1{
-        visibility: hidden;
-    }
-    }
-
  
+    a.button_e {
+        margin: 0 auto;
+    }
+    }
+@media (max-width: 320px){
+    .tieude-2 {
+        margin: -26px -4px;
+    }

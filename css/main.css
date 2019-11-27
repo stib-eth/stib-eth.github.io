@@ -112,7 +112,7 @@ button.navbar-toggler, button.navbar-toggler-close {
         text-align: center;
     }
     .Fonttitle {
-        margin-block-start: -152px;
+        margin-block-start: -66px;
         text-align: center;
     }  
     h2 {
@@ -132,6 +132,17 @@ button.navbar-toggler, button.navbar-toggler-close {
         -webkit-text-fill-color: transparent;
         animation: textclip 3s linear infinite;
         display: inline-block;
+    }
+    a{
+        text-decoration: none;
+    }
+    p {
+        font-size: 17px;
+        margin: 0 0 10px;
+    }
+    .text-center {
+        font-size: 16px;
+        text-align: center;
     }
     /* token */
     .title-team {
