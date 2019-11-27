@@ -307,7 +307,7 @@ video.heroVid {
             color: rgb(252, 247, 247);
             text-align: center;
             flex: auto;
-            padding-block-start: 380px;
+            padding-block-start: 222px;
         }
         .button_e {
             border: none;
@@ -355,7 +355,7 @@ video.heroVid {
         }
         /* profile */
         .profile{
-            height: 88vh;
+            height: 80vh;
             width: 100%;
             background:#f5f5f5;
         }
@@ -400,6 +400,27 @@ video.heroVid {
 }
 .carousel-indicators {
     bottom: -9px;
+}
+@media (max-width: 2200px){
+    .profile {      
+        width: 100%;
+        background: #f5f5f5;
+        object-fit: cover;
+    }
+    .flex-text-banner.text-center h1 { 
+      
+        margin-block-start: 160px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-size: -2px;
+        color: #fcfcfc;
+        font-size: 50px;
+    }
+    p {
+        font-size: 17px;
+        
+    }
 }
 @media (max-width: 1502px){
     .Fonttitle h2 {
@@ -542,6 +563,13 @@ video.heroVid {
     .banner-content {
         padding-top: 110px;
     }
+    @media (max-width: 970px) {
+        .profile {
+            height: 67vh;
+            /* width: 100%; */
+            /* background: #f5f5f5; */
+        }
+        }
 @media (max-width: 768px){
 .heroVid {
     max-width: 26%;
@@ -653,6 +681,11 @@ div#icon_menu {
   .banner-content {
     padding-top: 112px;
 }
+.profile {
+    height: 68vh;
+    width: 100%;
+    background: #f5f5f5;
+}
   .bannerfb {
    display: none;
 }
@@ -676,7 +709,13 @@ div#icon_menu {
 }
 
 }
-
+@media (max-width: 464px) {
+    .profile {
+        height: 55vh;
+        /* width: 100%; */
+        /* background: #f5f5f5; */
+    }
+    }
 @media (max-width: 420px) {
 .wrapper-text-banner {
     width: 100%;
@@ -922,9 +961,12 @@ img#img-roadmap-mobile{
     color: #000000;
 }
 }
-@media (max-width: 361px) {
+@media (max-width: 360px) {
     .navbar navbar-default{
      width: 790px;
+        }
+        #tokens{
+            height: 670px;
         }
   #icon_menu{
     display: block;
@@ -1020,10 +1062,16 @@ img#img-roadmap-mobile{
   .bannerfb {
    display: none;
 }
+.profile {
+    height: 50vh;
+    width: 100%;
+    background: #f5f5f5;
+}
 .wrapper-text-banner {
     width: 100%;
     object-fit: cover;
 }
+
 }
 
 @media (max-width: 321px){
@@ -1041,7 +1089,7 @@ img#img-roadmap-mobile{
     .flex-text-banner.text-center h1 {
       
         border: 1px solid #8de25c;
-        margin-block-start: 66px;
+        margin-block-start: -21px;
         opacity: 0.6;
         background-size: cover;
         background-position: center center;

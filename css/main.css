@@ -10,7 +10,7 @@ text-align: left;
 background-color: #fff;
                 }
 #tokens {
-    height: 800px;
+    height: 780px;
     width: auto;
     background: rgb(0, 0, 0);
 }
@@ -141,9 +141,9 @@ button.navbar-toggler, button.navbar-toggler-close {
         margin: 0 0 10px;
     }
     .text-center {
-        font-size: 16px;
-        text-align: center;
-    }
+    font-size: 16px;
+    text-align: center;
+}
     /* token */
     .title-team {
         text-align: center;
