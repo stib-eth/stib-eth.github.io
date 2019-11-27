@@ -1,604 +1,262 @@
 <!DOCTYPE html>
-
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>StiB ETH</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href=" https://fonts.googleapis.com/css?family=Raleway:400,200,300,800">
+    <link href="https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2">
+    <link rel="stylesheet" href="owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlCarousel/css/owl.theme.default.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/animation.css" rel="stylesheet" type="text/css" media="all">
+    <link href="vendor/vendor.css" rel="stylesheet" type="text/css" media="all">
 
+    <title>Document</title>
 </head>
 
-<body style="margin: 0;">
-    <html lang="en">
-
-
-    <!-- menu -->
-    <div id="wrapper-all-web" style="
-    overflow-x: hidden;">
-        <div class="banner" id="home">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <div style="float: left" class="logo_header">
-                        <a href="file:///E:/git2019/stib-eth.github.io/index.html">
-                            <img src="img/svg/logo_stib_no_co.svg" style="width: 83px; height: 35px">
-                        </a>
-                    </div>
-                </div>
-                <!-- icon for reponsive mobile open menu -->
-                <div class="topnav" id="myTopnav">
-                    <a><span data-hover="Giới thiệu" class="p2p">P2P</span></a>
-                    <a><span data-hover="Tài nguyên" class="token">TOKEN</span></a>
-                    <a><span data-hover="Sự kiện" class="Charity">CHARITY</span></a>
-                    <a><span data-hover="Liên Hệ Chúng Tôi" class="contact">Liên Hệ</span></a>
-                </div>
-                <div id="icon_menu">
-                    <i class="fas fa-bars fa-2x" style="color: #ff9f1a; font-size: 34px;" id="icon_menu1"></i>
-                </div>
-                <div id="icon_menu_close">
-
-                    <img src="img/svg/icons8-delete.svg" alt="" class="img-fluid" style="max-width: 80%;">
-                </div>
-                <script>
-
-                    const icon_menu = document.getElementById('icon_menu');
-                    icon_menu.onclick = () => {
-                        $("#myTopnav").slideDown("slow");
-                        document.getElementById('myTopnav').classList.add('active'); icon_menu_close
-                        document.getElementById('icon_menu_close').classList.add('active')
-                    };
-                    const icon_menu_close = document.getElementById('icon_menu_close');
-                    icon_menu_close.onclick = () => {
-                        document.getElementById('myTopnav').classList.remove('active');
-                        document.getElementById('icon_menu_close').classList.remove('active')
-                    }
-                    const myTopnav = document.getElementById('myTopnav');
-                    myTopnav.onclick = (event) => {
-                        const { target } = event;
-                        const className = target.classList[0];
-                        document.getElementById('myTopnav').classList.remove('active');
-                        document.getElementById('icon_menu_close').classList.remove('active')
-                        if (className !== undefined || className !== 'topnav') {
-                            window.location.href = '#' + className;
-                        }
-                    }
-                </script>
-                <!-- menu -->
-            </nav>
-        </div>
-        <!----- p2p ----->
-        <div class="css-p2p" id="p2p">
-            <div class="hero">
-                <div class="columnText">
-                    <div class="leftContentText">
-                        <p class="sub-title" style="color:white; font-style: italic;
-                    font-weight: bold;font-size: 20px;">Giao Dịch (mua/bán
-                            + cho vay/mượn) P2P trên Hợp Đồng Thông Minh StiB</p>
-                        <div class="bannerfb"> <img src="img/back/banner-pr-fb.jpg" style="
-                                width: 490px;height: 479px; object-fit: cover;
-                            "></div>
-                        <!-- <div class="storeButtonContainer">
-                            <div class="storebutton"><a class="storebutton"
-                                    href="https://testflight.apple.com/join/3NpiP8PC" target="_blank"> <img
-                                        src="img/back/Apple-App-Store-logo.jpg" width="200"
-                                        alt="Apple Store Button"></a>
-                                <div class="storeButtonContainer"></div>
-                            </div>
-                        </div> -->
-
-                    </div>
-                </div>
-            </div>
-            <div class="bigPhone"><video class="heroVid" playsinline="" autoplay="" muted="" loop="">
-                    <source src="video/Untitled Project.mp4" type="video/mp4" width="50%"></video> </div>
-            <div class="integrations">
-                <div class="protocol uniswap">
-                    <div class="companyLogo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                            witdh="50px" height="50px" viewBox="0 0 512 512">
-                            <title>exchange</title>
-                            <path
-                                d="M141.85,0C63.63,0,0,63.63,0,141.85S63.63,283.69,141.85,283.69s141.84-63.63,141.84-141.84S220.06,0,141.85,0Zm0,263.29A121.45,121.45,0,1,1,263.29,141.85,121.58,121.58,0,0,1,141.85,263.29Z"
-                                fill="#ff7300" />
-                            <path
-                                d="M148,127.35V86.25c14.18,1,19.44,7.5,24.3,7.5,6.07,0,8.91-7.7,8.91-11.54,0-9.93-19.44-14.18-33.21-14.58V62.16c0-2.43-3-4.65-6.07-4.65-3.44,0-5.87,2.22-5.87,4.65V68c-19.23,2-38.47,12.15-38.47,37.66,0,25.91,20.25,33.2,38.47,39.68V193c-20.65-1.62-26.12-15.79-32.8-15.79-5.06,0-9.31,6.68-9.31,11.54,0,9.92,17,23.48,42.11,23.89v6.27c0,2.43,2.43,4.66,5.87,4.66,3,0,6.07-2.23,6.07-4.66V212c21.87-3,36.85-16.8,36.85-41.71C184.85,142.74,165.62,133.83,148,127.35Zm-10.73-3.84c-10.73-4.05-19.43-8.3-19.43-19.84,0-10.53,8.09-15.59,19.43-17Zm9.52,69V149.83c9.92,4.25,17.81,9.92,17.81,22.67C164.6,184,157.72,190.52,146.79,192.54Z" />
-                            <path
-                                d="M370.15,228.31c-78.21,0-141.84,63.63-141.84,141.84S291.94,512,370.15,512,512,448.37,512,370.15,448.37,228.31,370.15,228.31Zm0,263.29A121.45,121.45,0,1,1,491.6,370.15,121.58,121.58,0,0,1,370.15,491.6Z"
-                                fill="#ff7300" />
-                            <path
-                                d="M459.55,183.39c-1.15-3.27-2.4-6.56-3.7-9.77a10.2,10.2,0,0,0-18.89,7.7c1.18,2.91,2.31,5.88,3.34,8.83a10.2,10.2,0,0,0,19.25-6.76Z" />
-                            <path
-                                d="M433,131.83a215,215,0,0,0-98.68-76.91l20.5-11.47a10.2,10.2,0,1,0-9.95-17.8L301.15,50.1A10.21,10.21,0,0,0,297.23,64l24.45,43.76a10.2,10.2,0,0,0,17.81-9.95L325.94,73.54a194.53,194.53,0,0,1,90.4,70A10.2,10.2,0,1,0,433,131.83Z" />
-                            <path
-                                d="M216.06,442,191.6,398.28a10.2,10.2,0,0,0-17.81,10l13.91,24.88A194.21,194.21,0,0,1,76.26,316.26,10.2,10.2,0,0,0,57,322.86,213.49,213.49,0,0,0,178.44,451.37l-20,11.19a10.2,10.2,0,1,0,10,17.81l43.76-24.46A10.2,10.2,0,0,0,216.06,442Z" />
-                            <path
-                                d="M408.77,370.15c23.23-17.46,15.92-53.8-11.87-61.21v-16a6.94,6.94,0,1,0-13.88,0v14.84H357.3V292.93a6.94,6.94,0,1,0-13.88,0v14.84h-18.8a6.94,6.94,0,1,0,0,13.88H335.5v97H324.62a6.94,6.94,0,1,0,0,13.88h18.8v14.84a6.94,6.94,0,0,0,13.88,0V432.54H383v14.84a6.94,6.94,0,1,0,13.88,0v-16C424.64,424,432,387.64,408.77,370.15ZM388,418.66h-38.6V377.1H388a20.78,20.78,0,1,1,0,41.56Zm0-55.45h-38.6V321.65H388a20.78,20.78,0,0,1,0,41.56Z" />
-                        </svg></div>
-                    <h2>KHÔNG PHÍ GIAO DỊCH</h2>
-                    <h5>Luôn luôn miễn phí giao dịch với Hợp Đồng Thông Minh StiB</h5>
-                </div>
-                <div class="protocol compound">
-                    <div class="companyLogo"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" witdh="50px" height="50px" version="1.1"
-                            id="Capa_1" x="0px" y="0px" viewBox="0 0 463 463"
-                            style="enable-background:new 0 0 463 46  3;" xml:space="preserve">
-                            <g>
-                                <path
-                                    d="M439.5,382.51H431v-8.5c0-12.958-10.542-23.5-23.5-23.5h-80c-12.958,0-23.5,10.542-23.5,23.5v8.5h-8.5   c-12.958,0-23.5,10.542-23.5,23.5v16c0,4.142,3.358,7.5,7.5,7.5h176c4.142,0,7.5-3.358,7.5-7.5v-16   C463,393.052,452.458,382.51,439.5,382.51z M319,374.01c0-4.687,3.813-8.5,8.5-8.5h80c4.687,0,8.5,3.813,8.5,8.5v8.5h-97V374.01z    M448,414.51H287v-8.5c0-4.687,3.813-8.5,8.5-8.5h144c4.687,0,8.5,3.813,8.5,8.5V414.51z" />
-                                <path fill="#ff7300"
-                                    d="M287.001,221.039l-0.354,0.354c-9.163,9.163-9.163,24.071,0,33.233c4.438,4.438,10.34,6.883,16.617,6.883   c6.277,0,12.178-2.445,16.617-6.883l45.255-45.254c4.438-4.438,6.883-10.34,6.883-16.617s-2.445-12.179-6.883-16.617   c-4.438-4.438-10.34-6.883-16.617-6.883c-6.277,0-12.179,2.445-16.617,6.883l-0.353,0.354l-17.396-17.397   c1.497-5.241,0.192-11.121-3.928-15.241l-48.569-48.569c-4.12-4.12-10-5.425-15.241-3.927l-17.397-17.396l0.353-0.354   c4.438-4.438,6.883-10.34,6.883-16.617c0-6.277-2.445-12.178-6.883-16.617c-4.438-4.438-10.34-6.883-16.617-6.883   s-12.179,2.445-16.617,6.883l-45.254,45.255c-4.438,4.438-6.883,10.34-6.883,16.617c0,6.277,2.445,12.179,6.883,16.617   c4.581,4.582,10.599,6.872,16.617,6.872s12.036-2.291,16.617-6.872l0.354-0.354l17.392,17.392   c-0.394,1.377-0.607,2.814-0.607,4.286c0,4.141,1.612,8.033,4.54,10.96l2.01,2.01l-15.549,15.55   c-4.962,4.962-7.213,11.607-6.801,18.114L6.883,365.393C2.445,369.831,0,375.732,0,382.01s2.445,12.179,6.883,16.617   c4.438,4.438,10.34,6.883,16.617,6.883s12.179-2.445,16.617-6.883l178.572-178.572c0.499,0.031,0.998,0.071,1.497,0.071   c6.017,0,12.036-2.291,16.617-6.872l15.55-15.549l2.01,2.01c2.928,2.928,6.82,4.541,10.96,4.541c1.472,0,2.909-0.213,4.286-0.607   L287.001,221.039z M348.519,184.259c2.177,0,4.354,0.829,6.011,2.486c1.605,1.605,2.49,3.739,2.49,6.01s-0.884,4.405-2.49,6.011   l-45.255,45.254c-3.315,3.315-8.707,3.314-12.021,0s-3.314-8.707,0-12.021l45.255-45.255   C344.166,185.087,346.342,184.259,348.519,184.259z M297.608,210.433l-16.021-16.021l23.335-23.335l16.021,16.021L297.608,210.433z    M161.49,108.256c-3.314-3.314-3.314-8.707,0-12.021l45.254-45.255c1.605-1.605,3.74-2.49,6.011-2.49s4.405,0.884,6.01,2.49   c3.314,3.314,3.314,8.707,0,12.021l-45.255,45.255C170.196,111.569,164.804,111.569,161.49,108.256z M218.412,84.567l16.021,16.021   l-23.335,23.335l-16.021-16.021L218.412,84.567z M29.51,388.02c-1.605,1.605-3.739,2.49-6.01,2.49s-4.405-0.884-6.01-2.49   c-1.605-1.605-2.49-3.739-2.49-6.01s0.884-4.405,2.49-6.01l174.43-174.431c0.116,0.121,0.216,0.252,0.336,0.372l11.313,11.313   c0.119,0.119,0.25,0.219,0.372,0.336L29.51,388.02z M226.197,202.647c-3.314,3.314-8.706,3.314-12.021,0l-11.313-11.313   c-3.314-3.314-3.314-8.707,0-12.021l15.549-15.55l23.335,23.335L226.197,202.647z M216.401,140.54   c-0.036-0.036-0.146-0.146-0.146-0.353s0.11-0.318,0.146-0.354l33.941-33.941c0.098-0.097,0.226-0.146,0.354-0.146   c0.128,0,0.256,0.049,0.354,0.146l48.568,48.568c0.195,0.195,0.195,0.513,0,0.708l-33.941,33.941   c-0.036,0.036-0.147,0.146-0.354,0.146s-0.317-0.11-0.354-0.146L216.401,140.54z" />
-
-                        </svg></div>
-                    <h2>CHIA SẺ LỢI NHUẬN</h2>
-                    <h5>Chúng tôi chia sẻ lợi nhuận cũng như tiền lãi với StiB Reserves thông qua đối tác.
-                    </h5>
-                </div>
-                <div class="protocol maker">
-                    <div class="companyLogo"><svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" witdh="50px" height="50px" version="1.1"
-                            id="Capa_1" x="0px" y="0px" viewBox="0 0 487.992 487.992"
-                            style="enable-background:new 0 0 487.992 487.992;" xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M207.677,17.656l8.64,13.472c31.601-19.796,71.735-19.796,103.336,0l8.64-13.472    C291.534-5.885,244.436-5.885,207.677,17.656z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M171.997,111.992h-16c-0.023,14.801,2.909,29.458,8.624,43.112l14.768-6.176    C174.489,137.232,171.976,124.674,171.997,111.992z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M304.893,200.608c-11.683,4.898-24.228,7.408-36.896,7.384v16c14.793,0.028,29.443-2.901,43.088-8.616L304.893,200.608z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M363.997,111.992c0.022,12.673-2.489,25.223-7.384,36.912l14.768,6.176c5.714-13.645,8.643-28.295,8.616-43.088H363.997z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M267.997,31.992c-44.183,0-80,35.817-80,80s35.817,80,80,80c44.163-0.049,79.952-35.837,80-80    C347.997,67.81,312.18,31.992,267.997,31.992z M267.997,175.992c-35.346,0-64-28.654-64-64c0-35.346,28.654-64,64-64    c35.346,0,64,28.654,64,64C331.957,147.322,303.327,175.953,267.997,175.992z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path fill="#ff7300"
-                                        d="M285.597,109.44l-9.6-3.2V85.712c4.456,1.555,7.587,5.578,8,10.28h16c-0.715-13.501-10.676-24.711-24-27.008v-4.992h-16    v4.992c-13.324,2.297-23.285,13.507-24,27.008c0.314,8.636,6.112,16.106,14.4,18.552l9.6,3.2v20.512    c-4.451-1.553-7.581-5.568-8-10.264h-16c0.715,13.501,10.676,24.711,24,27.008v4.992h16V155c13.324-2.297,23.285-13.507,24-27.008    C299.683,119.356,293.885,111.887,285.597,109.44z M259.997,100.912l-4.56-1.536c-2.024-0.68-3.44-2.072-3.44-3.384    c0.413-4.702,3.544-8.725,8-10.28V100.912z M275.997,138.272v-15.2l4.56,1.536c2.024,0.68,3.44,2.072,3.44,3.384    C283.584,132.694,280.453,136.717,275.997,138.272z" />
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path
-                                        d="M481.653,330.336l-26.344-26.344l26.344-26.344c3.123-3.124,3.123-8.188,0-11.312l-104-104    c-3.124-3.123-8.188-3.123-11.312,0L263.997,264.68L153.653,154.336c-3.124-3.123-8.188-3.123-11.312,0l-104,104    c-3.123,3.124-3.123,8.188,0,11.312l58.344,58.344H3.997v16h104c1.084,0.003,2.157-0.218,3.152-0.648l54.488-23.352h118.36v32h-88    c-4.418,0-8,3.581-8,8c0,3.121,1.815,5.957,4.648,7.264l104,48c2.617,1.19,5.671,0.885,8-0.8l138.552-99.984l21.064,21.064    L305.037,471.992h-43.608l-150.664-55.504c-0.886-0.327-1.823-0.495-2.768-0.496h-104v16h102.568l150.664,55.504    c0.886,0.328,1.823,0.495,2.768,0.496h48c1.909,0.002,3.754-0.682,5.2-1.928l168-144c3.355-2.875,3.745-7.925,0.87-11.28    C481.935,330.63,481.797,330.48,481.653,330.336z M163.997,303.992c-1.084-0.003-2.157,0.217-3.152,0.648l-1.944,0.8    c7.899-20.498,30.92-30.712,51.418-22.813c9.978,3.845,17.987,11.546,22.222,21.365H163.997z M249.637,303.992    c-7.004-23.772-28.858-40.068-53.64-40c-28.31,0.17-52.1,21.314-55.592,49.408l-24.984,10.704l-60.112-60.112l92.688-92.688    l132.688,132.688H249.637z M299.109,398.768l-66.688-30.776h59.576c4.418,0,8-3.582,8-8v-36.688l43.44,43.44L299.109,398.768z     M300.749,301.432c3.03-17.077,17.904-29.501,35.248-29.44c19.838-0.036,35.949,16.016,35.986,35.854    c0.032,17.358-12.354,32.255-29.426,35.394L300.749,301.432z M355.541,356.208c3.21-1.302,6.278-2.926,9.165-4.839l-8.133,5.871    L355.541,356.208z M438.805,297.872l-70.496,50.92c22.459-17.898,26.157-50.615,8.258-73.074    c-17.898-22.459-50.615-26.157-73.074-8.258c-6.951,5.539-12.366,12.768-15.729,20.996l-12.456-12.464l96.688-96.688    l92.688,92.688L438.805,297.872z" />
-                                </g>
-                        </svg></div>
-                    <h2>BẢO VỆ PHÁP LÝ</h2>
-                    <h5>Bảo vệ người giao dịch/khách hàng với StiB Legals bao gồm luật sư trong nước và quốc tế</h5>
-                </div>
-                <div class="protocol stakeCapital">
-                    <div class="companyLogo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                            witdh="50px" height="50px" viewBox="0 0 500 500">
-                            <title>897947</title>
-                            <path
-                                d="M254.29-.61C263.78,2.15,271.81,6.8,276.61,16A30.8,30.8,0,0,1,262,58.29c-15.62,7.22-34.9-.7-41.12-16.89A30.58,30.58,0,0,1,240,1c1.52-.48,3-1.09,4.52-1.63ZM249.2,46.28A16.11,16.11,0,1,0,233.3,30,16.15,16.15,0,0,0,249.2,46.28Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M-.61,244.52C2.11,235,6.8,227,16,222.17a30.86,30.86,0,0,1,42.31,14.72c7.23,15.69-.63,34.87-16.85,41.12A30.68,30.68,0,0,1,1,258.8c-.48-1.52-1.09-3-1.64-4.51Zm46.89,4.92a16.11,16.11,0,1,0-16.12,16.08A16.16,16.16,0,0,0,46.28,249.44Z"
-                                transform="translate(0.61 0.61)" />
-                            <path fill="#ff7300"
-                                d="M186.68,358.63c0-7.4.12-13.53-.1-19.64,0-1.23-1.2-2.59-2.16-3.58-4.42-4.55-9-8.93-13.44-13.48-6.35-6.53-6.89-12.53-1.91-20.17,2.31-3.53,4.71-7,7.48-11.1-19.17-9.1-40.87-14.18-51.66-35.41l-2,1.25c1.84,9.35,3.18,18.83,5.63,28a114.68,114.68,0,0,0,19.32,39.11,42.12,42.12,0,0,1,2.52,3.59c2.28,3.84,1.72,7.66-1.4,10a7,7,0,0,1-10.34-1.64c-5-7.19-10.23-14.35-14.19-22.12C94,253.79,108.8,183,160.29,140.51,213,97,291.94,98.73,342.54,144.79c34.38,31.3,49.61,70.59,46.24,116.71-4.73,64.65-56.33,118.35-120.85,126.67q-57.41,7.4-103.71-27.41c-2.25-1.7-4.32-5.18-4.4-7.89-.16-5.64,6.4-8.08,11.69-4.65C176.34,351.35,181,354.73,186.68,358.63Zm105.52-128c-5.62-4.16-6.56-7.18-3-12.79a29.13,29.13,0,0,0,4.79-16c0-7.69,3.91-12.64,10.61-16.09,11.28-5.81,22.38-11.95,33.54-18,1.38-.74,2.71-1.57,3.71-2.16l-10.3-10.71-6.5,9.48c-4.12,6-8.33,7.67-12.3,4.82s-3.88-7.11.33-13.28c2.28-3.33,4.56-6.66,7-10.21a119,119,0,0,0-40.33-18.13c-.39,2.08-.9,4-1.09,5.85-.89,8.88-4.65,16-11.89,21.5-5,3.82-9.67,8.21-14.51,12.32-9.56,8.09-17.35,6-21.56-5.77-4-11.28-8.07-22.57-12.44-34.8l-30.13,12c6.49,12.64,4.13,22.74-4.68,31.8-3,3.07-5.62,6.48-8.63,10l6.82,3.74c.6-1.09.92-1.65,1.21-2.22,5.91-11.25,17.11-13,26-3.93,2.74,2.78,5.39,5.65,8.06,8.51,7.66,8.22,7.77,15.56.37,24.13-10.11,11.69-20.52,23.15-30.23,35.17-6,7.46-12.69,12.42-22.67,11.7-5.4-.39-7.75,2.76-8.64,7.85,9.76,4.32,19.39,8.62,29.07,12.8a5.72,5.72,0,0,0,3.73.28c5.42-1.82,10.2-.46,14.83,2.43,10.2,6.39,20.46,12.67,30.65,19.08,12.39,7.8,15.71,19.1,9.46,32.34-5.34,11.31-10.84,22.56-16.25,33.84-.94,2-1.78,4-2.85,6.4,32.48,5.77,62.36.7,90.09-16.13a4.82,4.82,0,0,0,1.62-3.89c-.7-7.77-1.66-15.53-2.59-23.28-1.05-8.67-2.16-17.33-3.31-26.5-4.32.68-8.15,1.22-11.95,1.88-9,1.56-14.59-1.09-18.89-9.19-2.52-4.74-4.94-9.53-7.36-14.32-3.05-6-4.72-12.68-1.74-18.82C275.84,250.78,281.59,239.22,292.2,230.6Zm38,114.58c20.34-17.71,33.44-38.35,40.12-63,.39-1.43-.45-3.48-1.28-4.9-4.5-7.72-9.05-15.42-13.9-22.92a8.27,8.27,0,0,0-5.19-3.3c-6.6-.86-13.27-1.2-19.92-1.66-5.46-.38-10.06-2.3-13.45-6.8-.74-1-2.12-2.6-2.73-2.41-5.79,1.81-13.07,2.43-16.81,6.36-5.75,6-9.06,14.42-13.4,21.81L291.47,287a4.37,4.37,0,0,1,.22.43c.92,2.66,2.62,3.14,5.32,2.52a75.14,75.14,0,0,1,11.56-1.71c8.48-.56,14.75,4.49,16.12,12.9.79,4.81,1.28,9.67,1.88,14.5C327.74,325.12,328.9,334.59,330.2,345.18ZM176,147.69c-.47.08-.86,0-1.09.2-28.17,20.9-44.7,48.84-50.28,83.36a3.79,3.79,0,0,0,.52,2.71c5.94,7.19,12,14.29,17.46,20.78,3.63-3.57,6.33-7.63,10.12-9.54s8.86-1.54,13.23-2.67c2.6-.68,5.6-1.77,7.3-3.67,11-12.24,21.63-24.76,32.36-37.2a38.76,38.76,0,0,0,2.28-3.26l-11-11.77c-3.4,8.08-8.58,13.05-17.06,11.82-3.84-.56-7.61-2.69-11.05-4.73-9.65-5.7-11.2-15.78-4-24.39,3.24-3.86,6.69-7.55,9.92-11.42C177.36,154.81,178.32,151.41,176,147.69Zm33.85,220.75c7.07-14.7,14.1-29.13,20.93-43.66,2.42-5.14,1.15-8.78-3.91-12-7.52-4.82-15.16-9.46-22.75-14.16L193.39,292c-4.44,6.55-8.5,12.56-13.14,19.42,4.17,3.86,8,7.89,12.3,11.27,7,5.51,10,12.28,8.91,21.22-.57,4.64-.1,9.41-.1,14.13C201.36,365.94,201.36,365.94,209.85,368.44ZM352,177.05c-13.92,7.42-27.39,14.55-40.76,21.85-1.26.68-1.92,2.46-3.15,4.13a15.56,15.56,0,0,0,2.17.47,9.7,9.7,0,0,0,2.42-.22c11.3-3.32,21.52-1.11,30.71,6.07,4,3.1,7.73,4.34,12.71,1.61,3.62-2,7.14,0,8.9,3.62,1.67,3.46.74,6.67-2.49,9-1.13.82-2.35,1.53-4.4,2.86l14.82,30.14,1.54-.7C375.93,227.26,368.51,201.14,352,177.05ZM244,155.11c9.3-9.11,22.8-14.23,20.37-30.87H233.08C236.81,134.84,240.25,144.58,244,155.11Zm56.88,72.83a56.14,56.14,0,0,0,5.72-1.27c8.49-2.85,15.62-1.33,21.06,6.17a3.93,3.93,0,0,0,2.21,1.69c5.42.54,10.86.88,17.4,1.37-1.84-3.91-2.46-8-4.82-9.7-8.33-5.93-16.72-12.9-28.28-8.29a3.86,3.86,0,0,1-1.44.19C306,217.85,302.5,221.55,300.84,227.94Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M201.73,38.23c-.12,3.24-2.83,5.1-6.54,6.35-10,3.36-20.25,6.21-29.84,10.5-61.08,27.34-101,73.31-120,137.47-.42,1.4-.73,2.84-1.28,4.19-1.62,4-5.16,5.87-9,4.8a7.08,7.08,0,0,1-4.84-9.27c3.28-10.37,6.25-20.91,10.51-30.88C62.66,110.21,98.46,71.71,148.3,46.92c13.86-6.89,29-11.33,43.65-16.51C197.35,28.5,201.77,32,201.73,38.23Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M303.4,470c-2.06-2.16-5-4-6-6.56-1.52-4,.71-7.34,4.82-8.75,6.46-2.21,13.12-3.83,19.48-6.27Q422.27,409.86,453.35,306.7c.47-1.55.81-3.16,1.42-4.66,1.73-4.2,5.57-6,9.47-4.61a7.12,7.12,0,0,1,4.29,9.17c-3.12,9.9-5.87,20-10,29.51C429.3,403.77,379,447.67,308.24,468.16c-1.25.36-2.51.63-3.77.95Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M303,29.17c6.58,1.93,11.8,3.19,16.84,5q114.48,40.44,148.4,157c1.5,5.18-.29,9-4.46,10.29-4.4,1.31-8-.93-9.55-6.53C448.54,174.47,440.45,155,429,137.08Q386.18,69.76,309.83,46.35a82.59,82.59,0,0,1-8.77-2.9c-3.47-1.51-5-4.81-3.63-8C298.51,32.84,301.32,31,303,29.17Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M38,297.11c3.44,0,5.28,2.88,6.63,6.75,3.9,11.18,7.2,22.67,12.18,33.35,27,57.87,71.3,96.13,132.18,115.24,2.48.78,5,1.34,7.46,2.25,4.32,1.62,6.21,5.25,5,9.26-1.12,3.79-5,5.74-9.44,4.57A220.3,220.3,0,0,1,135,445c-43-25.55-74.63-61.28-94.18-107.38-4.23-10-7.25-20.5-10.48-30.87C28.72,301.45,31.89,297.24,38,297.11Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M437.88,249.17a30.81,30.81,0,0,1,30.93-30.52c17,.26,30.74,14.19,30.57,31s-14.23,30.74-31,30.52A30.87,30.87,0,0,1,437.88,249.17Zm14.65.39a16.11,16.11,0,1,0,15.92-16.26A16.15,16.15,0,0,0,452.53,249.56Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M249.17,437.88a30.75,30.75,0,1,1,.46,61.5c-16.78.17-30.71-13.58-31-30.57C218.38,452.06,232.32,437.94,249.17,437.88Zm.2,14.65a16.11,16.11,0,1,0,16.15,16A16.19,16.19,0,0,0,249.37,452.53Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M210.27,167.33c-1.09-.93-3.6-2.28-4.91-4.38a106.55,106.55,0,0,1-6.62-13c-1.9-4.25-.58-8.13,3-10s7.56-.71,9.86,3.44a128.9,128.9,0,0,1,6.84,14C220.49,162.29,217,167.16,210.27,167.33Z"
-                                transform="translate(0.61 0.61)" />
-                            <path
-                                d="M279.14,160.48c4.58.12,10.59,6.1,10.54,10.48a7.2,7.2,0,0,1-7.57,7.14c-4.47-.25-10.44-6.5-10.29-10.77A7.09,7.09,0,0,1,279.14,160.48Z"
-                                transform="translate(0.61 0.61)" />
-                        </svg></div>
-                    <h2>TIỆN LỢI</h2>
-                    <h5>Dễ sử dụng, giao diện đẹp mắt và có mặt trên 200 quốc gia với hơn 10 ngôn ngữ phổ biến.</h5>
+<body style="
+    margin: 0;">
+    <div id="div-all-web">
+        <div id="modal" class="modal-img">
+            <button class="img-toggler-close" type="button">
+                <span class="img-toggler-icon"><img src="img/svg/cross-out.svg" alt="" class="img-fluid"></span>
+            </button>
+            <div class="modal-content">
+                <div class="wrapper-img img-funds-modal">
+                    <img id="img-roadmap-mobile" src="img/back/roadmap-vn.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="tile-wrapper tile-buy" id="token">
-            <div class="content-wrapper">
-                <div class="foo">
-                    <span class="letter" data-letter="T">T</span>
-                    <span class="letter" data-letter="O">O</span>
-                    <span class="letter" data-letter="K">K</span>
-                    <span class="letter" data-letter="E">E</span>
-                    <span class="letter" data-letter="N">N</span>
-                </div>
-            </div>
-            <p class="tile-copy typography-retail-buy-copy">'Sti' là tên của Token trong hệ sinh thái của StiB
-                và người giữ token sẽ có quyền lợi trong nghiên cứu, dịch
-                vụ và các sản phẩm trong tương lai.</p>
-            <p class="tile-cta"><a href="/iphone/buy/" data-analytics-title="why apple is the best place to buy"
-                    data-analytics-region="learn more" aria-label="Learn more about buying iPhone from Apple"
-                    class="icon-wrapper typography-tile-copy"></a></p>
-
-
-
-            <div id="ani-title-wrapper" class="wrapper-background-banner fade-in">
-                <div id="phi-img" class="wrapper-img pos-relative move-up">
-                    <div class="tooltip-phi">
-                        Fullscreen View
+        <div class="wrapper-content">
+            <header id="banner">
+                <!-- start navbar -->
+                <nav class="header">
+                    <div class="navbar-logo">
+                        <!-- <a href="https://tokens.stib.co/"> -->
+                        <!-- <img src="images/svg/logo_stib_no_co_white_ti.svg" alt="" class="img-fluid white-logo"> -->
+                        <img src="img/svg/logo_stib_no_co.svg" class="img-fluid">
+                        <!-- </a>              -->
                     </div>
-                    <img id="img-philosophy" src="img/back/philosophy-vn.png" alt="" class="img-fluid">
-                </div>
-            </div>
-            <!-- Hover img -->
-            <div class="container">
-                <div class="box">
-                    <img src="img/back/76967182_782623515524568_4079290599788773376_n.png">
-                    <span>StiB TOKENS?</span>
-                </div>
-                <div class="box">
-                    <img src="img/back/roadmap-vn.png">
-                    <span>Tầm nhìn và Hướng đi</span>
-                </div>
-                <div class="box">
-                    <img src="img/back/TOKEN.png">
-                    <span>KẾ HOẠCH AIRDROP</span>
-                </div>
-                <div class="box">
-                    <img src="img/back/hinh1.png">
-                    <span>Effect</span>
-                </div>
-            </div>
-            <!-- table phone -->
-            <div class="token-img"></div>
-            <div class="flex-tile-wrapper ">
-                <div class="tile-tv-plus two-up-tile-wrapper">
-                    <div class="content-wrapper background large-centered">
-                    </div>
-                </div>
-                <div class="tile-apple-arcade two-up-tile-wrapper ">
-                    <div class="arcade-wrapper  background large-centered">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- chqarity -->
-
-        <div class="wrapper-scrolltop show-scrolltop">
-            <i class="fas fa-angle-up"></i>
-        </div>
-        <div class="flex-text-banner text-center" id="Charity">
-            <h4 style="
-                font-size: 25px;
-            ">Welcome to StiB Charity</h4>
-            <h1><span class="stibpay-char"> StiB PAY </span><i class="fas fa-arrow-right header-icon-1"></i><span
-                    class="stibcharity-char">
-                    StiB Charity </span><i class="fas fa-plus-circle header-icon-2"></i><span
-                    class="stibuniversal-char">
-                    StiB Universal </span></h1>
-            <a href="https://docs.google.com/document/d/1nF7ZwjGV42LTUdq1Tk9GfS5LKpV6kxcRYwdh_Nwsn64/" target="_blank"
-                class="animated-button1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Tài Liệu
-            </a>
-        </div>
-        <div class="linkedin">
-            <div class="linkedin__container">
-            </div>
-        </div>
-        <div class="linkedin">
-        </div>
-        <div class="page">
-            <!-- <div class="page__demo"> -->
-            <div class="page__container">
-                <div class="photobox photobox_type1">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/gia cu.jpg" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Giấc Ngủ</span>
-                    </div>
-                </div>
-                <div class="photobox photobox_type2">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/chua 2.jpg" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Bữa Ăn</span>
-                    </div>
-                </div>
-                <div class="photobox photobox_type3">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/architecture-asia-building-891407.jpg" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Ngôi Chùa</span>
-                    </div>
-                </div>
-                <div class="photobox photobox_type4">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/pay.png" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Ví StiB Pay</span>
-                    </div>
-                </div>
-                <div class="photobox photobox_type5">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/thuy canh.jpg" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Thủy Canh </span>
-                    </div>
-                </div>
-                <div class="photobox photobox_type6">
-                    <div class="photobox__previewbox">
-                        <img src="img/back/ngủ.jpg" class="photobox__preview" alt="Preview">
-                        <span class="photobox__label">Giấc Ngủ</span>
-                    </div>
-                </div>
-            </div>
-            <!-- </div> -->
-        </div>
-        <div class="welcome-1 text-center">
-            <h1> StiB sẽ làm gì</h1>
-            <p>
-                Mục tiêu là xây dựng một mô hình tự bền vững và tự cung cấp cho một cộng đồng tuyệt vời để được nhân
-                rộng
-                trên toàn cầu.</p>
-        </div>
-        <div class="body1">
-            <figure class="snip1482">
-
-                <figcaption>
-                    <h2>
-                        Bữa trưa miễn phí</h2>
-                    <p>
-                        tại các địa điểm công cộng như: Đền, Nhà thờ, Trường học ...</p>
-                </figcaption>
-                <img src="img/back/free laun.jpg" alt="sample45" />
-
-
-            </figure>
-            <figure class="snip1482">
-
-                <figcaption>
-                    <h2>
-                        Giấc Ngủ miễn phí</h2>
-                    <p>
-                        mô hình hóa Airbnb..</p>
-                </figcaption>
-                <img src="img/back/sleep.jpg" alt="sample59" />
-
-            </figure>
-            <figure class="snip1482">
-                <figcaption>
-                    <h2>Mạng xã hội , đào tạo
-                    </h2>
-                    <p>
-                        lực lượng lao động cho cuộc cách mạng kỹ thuật số tiếp theo.</p>
-                </figcaption>
-                <img src="img/back/network.jpg" alt="sample60" />
-
-            </figure>
-            <figure class="snip1482">
-                <figcaption>
-                    <h2>Nơi dự phòng</h2>
-                    <p>
-                        khi thảm họa xảy ra..</p>
-                </figcaption>
-                <img src="img/back/home.jpg" alt="sample45" />
-
-            </figure>
-        </div>
-        <div id="stibpayId" style="background:#f5f5f5;">
-            <div class="stib-pay">
-
-                <div class="welcome-1 text-center">
-                    <h1>S<span style="text-transform: lowercase;">ti</span>B PAY</h1>
-                    <p>StiB PAY <i class="fas fa-arrow-right"></i> StiB Charity <i class="fas fa-plus-circle"></i>
-                        StiB
-                        Universal</p>
-                </div>
-            </div>
-
-            <div class="text-charity">
-                <div class="description text-center">
-                    <p>
-                        Chìa khóa của bạn, tiền của bạn để bạn tự do. Nếu bạn nhận được đóng góp thì tài khoản của bạn
-                        sẽ bị
-                        giới hạn chỉ dành để mua thực phẩm và nhu yếu phẩm!</p>
-                </div>
-
-                <div class="description text-center mt-3">
-                    <p class=></p>StiB Universal sẽ dùng thử bắt đầu với 100 tình nguyện viên để nhận 200 đô la hàng
-                    tháng
-                    để họ có thể tập trung vào việc xây dựng một cộng đồng tuyệt vời với Tổ chức từ thiện StiB!</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="wallet_cf6">
-                <div class="wrapper-content qr-eth">
-                    <h3>ETH wallet</h3>
-                    <p>0xAc7aD1416E5e93eAAe8a64C42Cf363bB6e4Bd061</p>
-                    <div class="qr-wrapper">
-                        <div class="wrapper-img">
-                            <img src="img/back/qr_eth.png" class="img-tien">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="wallet_cf5">
-                <div class="wrapper-content qr-btc">
-                    <h3>BTC wallet</h3>
-                    <p>1NwwyKy9D5zGzA9mjgxYRZsKQhVxzcsQGF</p>
-                    <div class="qr-wrapper">
-                        <div class="wrapper-img">
-                            <img src="img/back/qr.png" class="img-tien">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="title-team pos-relative text-center">
-            <h1>Đồng Đội</h1>
-            <p>"We decentralize with everyone in mind!"</p>
-        </div>
-        <div id="member">
-            <div class="member-child">
-                <div class="member-img">
-                    <img src="img/back/67671345_904843066548685_8822868947842891776_n.jpg" />
-                    <p>Hoang Dung</p>
-                    <p>Developer</p>
-                </div>
-                <div class="member-bio">
-                    <h1>KĨ NĂNG</h1>
-                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
-                </div>
-            </div>
-            <div class="member-child">
-                <div class="member-img">
-                    <img src="img/back/ben.jpg" />
-                    <p>Ben Le</p>
-                    <p>Founder/CEO at StiB</p>
-                </div>
-                <div class="member-bio">
-                    <h1>KĨ NĂNG</h1>
-                    <p>Tôi chủ yếu làm việc với My SQL, Objective-C, Ethereum, BlockChain.</p>
-                </div>
-            </div>
-            <div class="member-child">
-                <div class="member-img">
-                    <img src="img/back/tung.jpg" />
-                    <p>Hoang Dung</p>
-                    <p>Developer</p>
-                </div>
-                <div class="member-bio">
-                    <h1>KĨ NĂNG</h1>
-                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
-                </div>
-            </div>
-            <div class="member-child">
-                <div class="member-img">
-                    <img src="img/back/tung.jpg" />
-                    <p>Hoang Dung</p>
-                    <p>Developer</p>
-                </div>
-                <div class="member-bio">
-                    <h1>KĨ NĂNG</h1>
-                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
-                </div>
-            </div>
-            <!-- <div class="member-child">
-                <div class="member-img1">
-                    <img src="https://stib-eth.github.io/img/back/67671345_904843066548685_8822868947842891776_n.jpg" />
-                    <p>Hoang Dung</p>
-                    <p>Developer</p>
-                </div>
-                <div class="member-bio">
-                    <h1>KĨ NĂNG</h1>
-                    <p>Chủ yếu làm việc với HTML, Jquery, JavaScript, BlockChain. Tổ Chức Sự Kiện</p>
-                </div>
-            </div> -->
-        </div>
-        <!-- start contact -->
-        <div id="contact" id="contact">
-            <div class="contact1">
-                <div class="grid-container grid-3-col">
-                    <div class="grid-item grid-1">
-                        <div class="title-contact">
-                            <h1>Liên hệ</h1>
-                        </div>
-                    </div>
-                    <div class="grid-item grid-2">
-                        <div class="info-contact">
-                            <img src="img/svg/phone-call.svg" alt="lostimg" class="icon-contact">
-                            <span id="phone-number" style="color: #333;">(+84) 90 609 7525</span>
-                        </div>
-                        <div class="info-contact">
-                            <img src="img/svg/envelope.svg" alt="lostimg" class="icon-contact">
-                            <span>Support AT StiB.co</span>
-                        </div>
-                    </div>
-                    <div class="grid-item grid-3">
-                        <div class="info-contact">
-                            <img src="img/svg/world.svg" alt="lostimg" class="icon-contact">
-                            <span><a href="https://stib.co/" class="link-contact" target="_blank">
-                                    StiB.co</a></span>
-                        </div>
-                        <div class="info-contact mb-0">
-                            <img src="img/svg/address.svg" alt="lostimg" class="icon-contact">
-                            <span>Saigon, Vietnam</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer id="footer" class="fixed-footer">
-            <div class="contact1">
-                <div class="wrapper-icon-footer">
-                    <ul class="d-flex justify-content-center">
-                        <li><a class="nav-link" href="https://www.facebook.com/StiBLabs/" target="_blank"><img
-                                    src="img/svg/facebook-logo.svg" alt="" class="img-fluid"></a></li>
-                        <li><a class="nav-link" href="https://twitter.com/StiBLabs" target="_blank"><img
-                                    src="img/svg/twitter.svg" alt="" class="img-fluid"></a></li>
-                        <li><a class="nav-link" href="https://www.linkedin.com/company/stib-labs/" target="_blank"><img
-                                    src="img/svg/linkedin-logo.svg" alt="" class="img-fluid"></a></li>
-                        <li><a id="link-telegram" class="nav-link" href="https://t.me/StiBenglish" target="_blank"><img
-                                    src="img/svg/telegram.svg" alt="" class="img-fluid"></a></li>
+                    <ul class="topnav" id="myTopnav">
+                        <li class="nav-item">
+                            <a class="nav-link n1" href="">P2P</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link n2" href="">Tokens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link n3" href="">Charity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link n4" href="">Liên hệ</a>
+                        </li>
                     </ul>
+                    <div id="icon_menu">
+                        <img src="img/svg/menu.svg" alt="" class="img-fluid">
+                    </div>
+                    <div id="icon_menu_close">
+
+                        <img src="img/svg/cross-out.svg" alt="" class="img-fluid" style="max-width: 80%;">
+                    </div>
+                </nav>
+                <!-- end navbar -->
+            </header>
+            <!-- start banner -->
+            <section id="tokens">
+                <div class="container">
+                    <div class="grid-container grid-2-col">
+                        <div class="grid-item">
+                            <div class="wrapper-img-token pos-relative">
+                                <div class="button">
+                                    <p class="sub-title">Giao Dịch (mua/bán
+                                        + cho vay/mượn) P2P trên Hợp Đồng Thông Minh StiB</p>
+                                    <a href="https://m.stib.co/" class="example_e" target="blank">Tìm Hiểu Thêm</a>
+                                    <div class="bannerfb">
+                                        <img src="img/back/banner-pr-fb.jpg" s
+                                            style="width: 490px;height: 479px; object-fit: cover;                                          ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item d-flex align-items-center pos-relative">
+                            <video class="heroVid" playsinline="" autoplay="" muted="" loop="">
+                                <source src="video/Untitled Project.mp4" type="video/mp4"></video>
+                        </div>
+                    </div>
                 </div>
-                <div class="copy-right">
-                    <div class="contact1">
-                        <div class="footerL text-center">
-                            © StiB Labs 2014-2140, All Rights Reserved | <a
-                                href="https://stib.co/index.php?showpage=terms" target="_blank"
-                                class="link_ToS">TERMS</a> | <a href="https://stib.co/index.php?showpage=privacy"
-                                target="_blank" class="link_Pri">PRIVACY</a>
+            </section>
+            <!-- end banner -->
+            <!-- start tokens -->
+
+            <div id="future">
+                <div class="container">
+                    <div class="Fonttitle">
+                            <h2>STIB TOKEN</h2> </div>
+                        <div class="click">
+                            <a href="http://tokens.stib.co/" class="example_e" target="blank">Tìm Hiểu Thêm</a>
+                            
+                        </div>
+                        <div class="grid-container grid-2-col">
+                            <div class="grid-item">
+                                <div class="wrapper-img-future pos-relative">
+                                    <img id="img-future" src="img/back/roadmap-vn.png" alt="" class="img-fluid">
+                                    <div class="tooltip"> Xem Ảnh lớn </div>
+                                </div>
+                            </div>
+                            <div class="grid-item flex-class  pos-relative">
+                                <div class="wrapper-content-future">
+                                    <div class="tieude-future">
+                                        <p>'Sti' là tên của Token trong hệ sinh thái của StiB và người giữ token sẽ có
+                                            quyền
+                                            lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai.</p>
+                                    </div>
+                                </div>
+                                <div class="tieude-2">
+                                    <p>" Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội
+                                        đầu
+                                        tư thay vì bị quyết định theo phương thức quay số truyền thống hoặc phải tham
+                                        gia
+                                        vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất. "</p>
+                                </div>
+                            </div>
+                        </div>
+
+                   
+                </div>
+            </div>
+            <!-- end tokens -->
+            <!-- start charity -->
+            <div id="charity">
+                <!-- <div class="container"> -->
+                <div class="banner-content " style="position: relative;">
+                    <div class="wrapper-text-banner ">
+                        <div class="flex-text-banner text-center">
+                            <h1><span class="stibpay-char"> StiB PAY </span><i
+                                    class="fas fa-arrow-right header-icon-1"></i><span class="stibcharity-char">
+                                    StiB Charity </span><i class="fas fa-plus-circle header-icon-2"></i><span
+                                    class="stibuniversal-char"> StiB Universal </span></h1>
+                            <p>"We decentralize and leave no one behind!"
+                            </p>
+                            <button class="button_e" target="blank"><a
+                                    href="https://docs.google.com/document/d/1nF7ZwjGV42LTUdq1Tk9GfS5LKpV6kxcRYwdh_Nwsn64/"
+                                    target="_blank">Tài Liệu</a></button>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- end charity -->
+            <!-- Team -->
+            <div class="profile">
+                <div class="container">
+                    <div class="title-team pos-relative text-center">
+                        <h1>Stib Team</h1>
+                        <p>"We decentralize with everyone in mind!"</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- End Team -->
+            <!-- start contact -->
+            <div id="contact">
+                <div class="container">
+                    <div class="grid-container grid-3-col">
+                        <div class="grid-item grid-1">
+                            <div class="title-contact">
+                                <h1>Contact Us</h1>
+                            </div>
+                        </div>
+                        <div class="grid-item grid-2">
+                            <div class="info-contact">
+                                <img src="img/svg/phone-call.svg" alt="" class="icon-contact">
+                                <span id="phone-number" style="color: #333;"> <span>(+1)</span>(617)
+                                    863&minus;7286</span>
+                            </div>
+                            <div class="info-contact">
+                                <img src="img/svg/envelope.svg" alt="" class="icon-contact">
+                                <span>Support AT StiB.co</span>
+                            </div>
+                        </div>
+                        <div class="grid-item grid-3">
+                            <div class="info-contact">
+                                <img src="img/svg/world.svg" alt="" class="icon-contact">
+                                <span><a href="https://stib.co/" class="link-contact" target="_blank">
+                                        StiB.co</a></span>
+                            </div>
+                            <div class="info-contact mb-0">
+                                <img src="img/svg/address.svg" alt="" class="icon-contact">
+                                <span>Saigon, Vietnam</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <!-- end contact -->
+            <!-- start footer -->
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <div class="wrapper-icon-footer">
+                        <ul class="d-flex justify-content-center">
+                            <li><a class="nav-link" href="https://www.facebook.com/StiBLabs/" target="_blank"><img
+                                        src="img/svg/facebook-logo.svg" alt="" class="img-fluid"></a></li>
+                            <li><a class="nav-link" href="https://twitter.com/StiBLabs" target="_blank"><img
+                                        src="img/svg/twitter.svg" alt="" class="img-fluid"></a></li>
+                            <li><a class="nav-link" href="https://www.linkedin.com/company/stib-labs/"
+                                    target="_blank"><img src="img/svg/linkedin-logo.svg" alt="" class="img-fluid"></a>
+                            </li>
+                            <li><a id="link-telegram" class="nav-link" href="https://t.me/StiBenglish"
+                                    target="_blank"><img src="img/svg/telegram.svg" alt="" class="img-fluid"></a></li>
+                        </ul>
+                    </div>
+                    <div class="copy-right">
+                        <div class="container">
+                            <div class="footerL text-center">
+                                © StiB Labs 2014-2140, All Rights Reserved | <a
+                                    href="https://stib.co/index.php?showpage=terms" target="_blank"
+                                    class="link_ToS">TERMS</a> | <a href="https://stib.co/index.php?showpage=privacy"
+                                    target="_blank" class="link_Pri">PRIVACY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-    </div>
+
+
     <script>
-        const hoverMemberChild = document.getElementsByClassName('member-child');
-        for (let index = 0; index < hoverMemberChild.length; index++) {
-            hoverMemberChild[index].addEventListener("mouseover", () => {
-                const bio = hoverMemberChild[index].childNodes[3];
-                bio.style.display = "block"
-            });
-            hoverMemberChild[index].addEventListener("mouseleave", () => {
-                const bio = hoverMemberChild[index].childNodes[3];
-                bio.style.display = "none"
-            });
+        const icon_menu = document.getElementById('icon_menu');
+        icon_menu.onclick = () => {
+            $("#myTopnav").slideDown("slow");
+            document.getElementById('myTopnav').classList.add('active'); icon_menu_close
+            document.getElementById('icon_menu_close').classList.add('active')
+        };
+        const icon_menu_close = document.getElementById('icon_menu_close');
+        icon_menu_close.onclick = () => {
+            document.getElementById('myTopnav').classList.remove('active');
+            document.getElementById('icon_menu_close').classList.remove('active')
+        }
+        const myTopnav = document.getElementById('myTopnav');
+        myTopnav.onclick = (event) => {
+            const { target } = event;
+            const className = target.classList[0];
+            document.getElementById('myTopnav').classList.remove('active');
+            document.getElementById('icon_menu_close').classList.remove('active')
+            if (className !== undefined || className !== 'topnav') {
+                window.location.href = '#' + className;
+            }
         }
     </script>
-    <script src="jquery/jquery-3.3.1.min.js"></script>
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/js.js"></script>
+    <script type="text/javascript" src="jqwery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="jqwery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
 </body>
 
 </html>
