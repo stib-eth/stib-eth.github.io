@@ -401,6 +401,13 @@ video.heroVid {
 .carousel-indicators {
     bottom: -9px;
 }
+@media (max-width: 1502px){
+    .Fonttitle h2 {
+        margin: 16px auto;
+        font-size: 46px;
+        object-fit: cover;
+    }
+}
 @media (max-width: 1024px){
     .heroVid {
         max-width: 45%;
@@ -408,11 +415,13 @@ video.heroVid {
     }
     .wrapper-text-banner {
         width: 100%;
+        object-fit: cover;
     }
     }
     @media (max-width: 1020px){
     .wrapper-text-banner {
         width: 100%;
+        object-fit: cover;
     }
 }
 @media (max-width: 997px){
@@ -433,6 +442,7 @@ video.heroVid {
     }
     .wrapper-text-banner {
         width: 100%;
+        object-fit: cover;
     }
     .grid-item{
         padding-top: 15px;
@@ -550,6 +560,7 @@ video.heroVid {
 }
 
 .grid-item{
+    width: 100%;
     padding-top: 15px;
 }
 .grid-container.grid-2-col {
@@ -634,6 +645,7 @@ div#icon_menu {
          /* p2p */
          .wrapper-text-banner {
             width: 100%;
+            object-fit: cover;
         }
   .topnav{
      flex-direction: row;
@@ -656,20 +668,32 @@ div#icon_menu {
 }
 .wrapper-text-banner {
     width: 100%;
+    object-fit: cover;
 }
+.Fonttitle h2 {
+    margin: 16px auto;
+    font-size: 46px;
+}
+
 }
 
 @media (max-width: 420px) {
 .wrapper-text-banner {
     width: 100%;
+    object-fit: cover;
 }
 .tieude-future {
     visibility: hidden;
+}
+.Fonttitle h2 {
+    margin: 16px auto;
+    font-size: 46px;
 }
 }
 @media (max-width: 418px) {
     .wrapper-text-banner {
         width: 100%;
+        object-fit: cover;
     }
     .tieude-future {
         visibility: hidden;
@@ -685,8 +709,12 @@ div#icon_menu {
 .tieude-future {
     visibility: hidden;
 }
+.Fonttitle h2 {
+    margin: 16px auto;
+    font-size: 46px;
+}
 .grid-item{
-    padding-top: 15px;
+    width: 100%;
 }
 .heroVid{
     margin-inline-start: -96px;
@@ -818,22 +846,20 @@ img#img-roadmap-mobile{
     height: 80%;
     margin: 78px auto;
 }
-.Fonttitle h2{
-    margin: 103px auto;
-    font-size: 60px;
-}
+
 
 /* charity */
 .wrapper-text-banner{
     width: 100%;
+    object-fit: cover;
 }
 .banner-content{
     margin-block-start: 110px;
 }
 .flex-text-banner.text-center h1 {
-    border-radius: 20px;
+   
     border: 1px solid #8de25c;
-    margin-block-start: -193px;
+    margin-block-start: 9px;
     opacity: 0.6;
     background-size: cover;
     background-position: center center;
@@ -877,13 +903,14 @@ img#img-roadmap-mobile{
 }
 .wrapper-text-banner {
     width: 100%;
+    object-fit: cover;
 }
 .tieude-2 {
     margin: -10px -4px;
 }
 .flex-text-banner.text-center h1 {
     font-size: 25px;
-    border-radius: 30px;
+   
     border: 1px solid #8de25c;
     margin-block-start: 20px;
     opacity: 0.6;
@@ -895,7 +922,7 @@ img#img-roadmap-mobile{
     color: #000000;
 }
 }
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     .navbar navbar-default{
      width: 790px;
         }
@@ -905,9 +932,8 @@ img#img-roadmap-mobile{
   }
   .flex-text-banner.text-center h1 {
     font-size: 30px;
-    border-radius: 20px;
     border: 1px solid #8de25c;
-    margin-block-start: -102px;
+    margin-block-start: 66px;
     opacity: 0.6;
     background-size: cover;
     background-position: center center;
@@ -996,22 +1022,26 @@ img#img-roadmap-mobile{
 }
 .wrapper-text-banner {
     width: 100%;
+    object-fit: cover;
 }
 }
 
-@media (max-width: 320px){
+@media (max-width: 321px){
     .heroVid {
         width: 50%;
         margin-inline-start: -88px;
     }
+    .header{
+        height: 69px;
+    }
     .Fonttitle h2 {
-        margin: 103px auto;
+        margin: 16px auto;
         font-size: 46px;
     }
     .flex-text-banner.text-center h1 {
-        border-radius: 20px;
+      
         border: 1px solid #8de25c;
-        margin-block-start: -120px;
+        margin-block-start: 66px;
         opacity: 0.6;
         background-size: cover;
         background-position: center center;
@@ -1022,7 +1052,8 @@ img#img-roadmap-mobile{
         font-size: 27px;
     }
     .wrapper-text-banner {
-        width: 100%;
+        object-fit: cover;
+    width: 100%;
     }
  
     a.button_e {
@@ -1033,3 +1064,42 @@ img#img-roadmap-mobile{
     .tieude-2 {
         margin: -26px -4px;
     }
+    .header{
+        height: 69px;
+    }
+    .Fonttitle h2 {
+        margin: 16px auto;
+        font-size: 46px;
+    }
+
+}
+@media (max-width: 300px){
+    .tieude-2 {
+        margin: -26px -4px;
+    }
+    .header{
+        height: 69px;
+    }
+    .Fonttitle h2 {
+        margin: 16px auto;
+        font-size: 46px;
+    }
+    .flex-text-banner.text-center h1 {
+       
+        border: 1px solid #8de25c;
+        margin-block-start: 20px;
+        opacity: 0.6;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-size: -2px;
+        background: #f0f0f0;
+        color: #000000;
+        font-size: 27px;
+    }
+    .profile {
+        height: 50vh;
+        width: 100%;
+        background: #f5f5f5;
+    }
+}
