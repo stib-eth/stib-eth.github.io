@@ -52,6 +52,7 @@ button.navbar-toggler, button.navbar-toggler-close {
     /* charity */
     #contact {
         padding: 65px 0;
+        border-top: 1px solid #e2e2e2;
     }
     .info-contact {
         margin-bottom: 10px;
@@ -155,7 +156,7 @@ button.navbar-toggler, button.navbar-toggler-close {
     .title-team {
         text-align: center;    
         padding: 20px 10px;
-        font-size: 30px;
+        font-size: 26px;
     }
     /* song ngữ */
     .dual-lang {
