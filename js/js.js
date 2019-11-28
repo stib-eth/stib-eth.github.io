@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	$('.n1').click(function (event) {
 		event.preventDefault();
-		$('body,html').animate({ scrollTop: $('#tokens').offset().top - 100 }, 500);
+		$('body,html').animate({ scrollTop: $('#p2p').offset().top - 100 }, 500);
 		// if ($('#topnav').hasClass('active')) {
 		// 	$('#topnav').removeClass('active');
 		// }
@@ -21,6 +21,13 @@ $(document).ready(function () {
 		$('body,html').animate({ scrollTop: $('#charity').offset().top }, 500);
 	});
 	$('.n4').click(function (event) {
+		event.preventDefault();
+		if ($('#topnav').hasClass('active')) {
+			$('#topnav').removeClass('active');
+		}
+		$('body,html').animate({ scrollTop: $('#team').offset().top }, 500);
+	});
+	$('.n5').click(function (event) {
 		event.preventDefault();
 		if ($('#topnav').hasClass('active')) {
 			$('#topnav').removeClass('active');
@@ -55,17 +62,17 @@ for (let index = 0; index < $('.q-li').length; index++) {
 		$('.answers-p').eq(index).addClass('move-left-in');
 	})
 }
-$('.owl-1').owlCarousel({
-	loop: true,
-	margin: 20,
-	autoplay: 3000,
-	responsive: {
-		0: {
-			items: 1
-		},
-		// 768:{
-		// 	items:1
-		// },
-	}
-});
+// $('.owl-1').owlCarousel({
+// 	loop: true,
+// 	margin: 20,
+// 	autoplay: 3000,
+// 	responsive: {
+// 		0: {
+// 			items: 1
+// 		},
+// 		// 768:{
+// 		// 	items:1
+// 		// },
+// 	}
+// });
 
