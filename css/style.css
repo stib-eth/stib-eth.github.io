@@ -15,6 +15,7 @@ ul {
 
 .navbar-logo {
     width: 90px;
+    margin-left: 10px;
 }
 
 #div-all-web {
@@ -297,7 +298,7 @@ div#future {
 
 .wrapper-img-future {
     padding: 30px;
-    border: 1px solid #8de25c;
+    border: 1px solid #e48a3a;
 }
 
 .wrapper-img-future img,
@@ -492,7 +493,7 @@ background-color: #717171;
 #p2p .item{
     width: 50%;
     text-align: center;
-    height: 80vh;
+    height: 85vh;
 }
 
 #p2p .item img{
@@ -661,6 +662,7 @@ margin: 0 auto;
 
     #p2p .item{
         width: 100%;
+        flex-direction: column;
     }
     .swap-div{
         display: flex;
