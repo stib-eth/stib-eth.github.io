@@ -164,8 +164,9 @@ button.navbar-toggler, button.navbar-toggler-close {
         width: 40px;
         font-size: 12px;
         font-weight: bold;
-        top: 11px;
-        left: 6px;
+        top: 25px;
+        left: 109px;
+        position: absolute
     }
     .show-current-lang span {
         cursor: pointer;
@@ -186,9 +187,34 @@ button.navbar-toggler, button.navbar-toggler-close {
         transition: .3s;
         opacity: 1;
     }
+    .img-lang-current.active {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .lang-select.active .img-lang {
+        opacity: 1;
+    }
     ul.lang-choice li {
         padding: 7px 0;
         cursor: pointer;
+    }
+    .lang-choice {
+        position: absolute;
+    top: 145%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 5px 0;
+    width: 85px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 30px #e0e0e0;
+    box-shadow: 3px 3px 30px #e0e0e0;
+    opacity: 0;
+    visibility: hidden;
     }
     .lang-choice.active {
         opacity: 1;

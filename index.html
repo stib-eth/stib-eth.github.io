@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
     <link href=" https://fonts.googleapis.com/css?family=Raleway:400,200,300,800">
     <link href="https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,7 +16,7 @@
     <link href="css/animation.css" rel="stylesheet" type="text/css" media="all">
     <link href="vendor/vendor.css" rel="stylesheet" type="text/css" media="all">
 
-    <title>Document</title>
+    <title>StiB Entertainment</title>
 
 </head>
 
@@ -36,20 +39,26 @@
                     <div class="navbar-logo">
                         <!-- <a href="https://tokens.stib.co/"> -->
                         <!-- <img src="images/svg/logo_stib_no_co_white_ti.svg" alt="" class="img-fluid white-logo"> -->
-                        <a href="file:///E:/git2019/stib-eth.github.io/index.html">
+                        <div>
                             <img src="img/svg/logo_stib_no_co.svg" class="img-fluid">
-                        </a>
-                        <!-- </a>              -->
-                    </div>
-                    <!-- <div class="dual-lang pos-relative">
-                        <div style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" class="show-current-lang">
-                            <span></span> <img src="img/svg/down-arrow.svg" alt="" class="img-lang-current img-lang">
                         </div>
-                        <ul class="lang-choice">
-                            <li id="en-lang" class="lang-select"><span>EN</span> <img src="img/svg/down-arrow.svg" alt="" class="img-lang"></li>
-                            <li id="vn-lang" class="lang-select"><span>VN</span> <img src="img/svg/down-arrow.svg" alt="" class="img-lang"></li>
-                        </ul>
-                    </div> -->
+                        <div class="dual-lang">
+                            <div id="currentLang"
+                                style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
+                                class="show-current-lang">
+                                <span>EN</span> <img src="img/svg/down-arrow.svg" alt=""
+                                    class="img-lang-current img-lang">
+                            </div>
+
+                            <ul id="optionLang" class="lang-choice" style="display: none">
+                                <li id="en-lang" class="lang-select active"><span>EN </span> <img
+                                        src="img/svg/down-arrow.svg" alt="" class="img-lang"></li>
+                                <li id="vn-lang" class="lang-select "><span>VN</span> <img src="img/svg/down-arrow.svg"
+                                        alt="" class="img-lang "></li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <ul class="topnav" id="myTopnav">
                         <li class="nav-item">
                             <a class="nav-link n1" href="">P2P</a>
@@ -165,13 +174,18 @@
             <div id="charity">
                 <!-- <div class="container"> -->
                 <div class="banner-content " style="position: relative;">
-                    <img
-                        src='img/back/24863419-hands-holding-green-heart-shaped-tree-tree-arranged-in-a-heart-shape-love-nature-save-the-world-heal.jpg' />
+                    <img class="background-charity" src='img/back/24863419-hands-holding-green-heart-shaped-tree-tree-arranged-in-a-heart-shape-love-nature-save-the-world-heal.jpg' />
                     <div class="flex-text-banner text-center">
-                        <h1><span class="stibpay-char"> StiB PAY </span><i
-                                class="fas fa-arrow-right header-icon-1"></i><span class="stibcharity-char">
-                                StiB Charity </span><i class="fas fa-plus-circle header-icon-2"></i><span
-                                class="stibuniversal-char"> StiB Universal </span></h1>
+                        <h1>
+                            <span class="stibpay-char"> StiB PAY </span>
+                            <!-- <i class="fas fa-arrow-right header-icon-1"></i> -->
+                            <img src="img/svg/arrow-pointing-to-right.svg" class="header-icon-1" alt="">
+                            <span class="stibcharity-char">
+                                StiB Charity </span>
+                            <!-- <i class="fas fa-plus-circle header-icon-2"></i> -->
+                            <img src="img/svg/plus.svg" class="header-icon-2" alt="">
+                            <span class="stibuniversal-char"> StiB Universal </span>
+                        </h1>
                         <p style="font-size: 18px;">"We decentralize and leave no one behind!"</p>
                         <a href="http://charity.stib.co/" class="button_e" target="blank">
                             LEARN MORE</a>
@@ -192,34 +206,25 @@
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 2</div>
                             <div class="team-img">
-                            <img src="img/back/team3.jpg" class="team-img">
+                                <img src="img/back/team3.jpg" class="team-img">
                             </div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 2</div>
                             <div class="team-img">
-                            <img src="img/back/team 2.jpg" class="team-img">
+                                <img src="img/back/team 2.jpg" class="team-img">
                             </div>
                         </div>
 
 
                         <div style="text-align:center">
-                            <a class="prev" onclick="plusSlides(-1)" style="
-                            position: absolute;
-                            left: 0;
-                            top: 50%;
-                        ">❮</a>
-                            <a class="next" onclick="plusSlides(1)" style="
-                           position: absolute;
-                           right: 0;
-                           top: 50%;
-                       ">❯</a>
+                            <a class="prev" onclick="plusSlides(-1)"> ❮ </a>
+                            <a class="next" onclick="plusSlides(1)"> ❯ </a>
 
                         </div>
-                        <br>
 
-                        <div style="text-align:center">
+                        <div class="dot-container" style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                         </div>
@@ -256,7 +261,7 @@
                                 </div>
                                 <div class="info-contact mb-0">
                                     <img src="img/svg/address.svg" alt="" class="icon-contact">
-                                    <span>Saigon, Vietnam</span>
+                                    <span class="localvn">Boston, MA, USA</span>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +304,7 @@
 
 
         <script>
-         const icon_menu = document.getElementById('icon_menu');
+            const icon_menu = document.getElementById('icon_menu');
             icon_menu.onclick = () => {
                 $("#myTopnav").slideDown("slow");
                 document.getElementById('myTopnav').classList.add('active');
@@ -337,7 +342,7 @@
             setInterval(() => {
                 slideIndex++;
                 showSlides(slideIndex);
-            },5000 );
+            }, 5000);
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
@@ -354,7 +359,7 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
         <script type="text/javascript" src="jqwery/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="jqwery/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/js.js"></script>
