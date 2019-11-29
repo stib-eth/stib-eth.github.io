@@ -191,14 +191,16 @@
 
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 2</div>
-                            <img src="img/back/team3.jpg" style="width:90%;object-fit: contain;height: 600px;">
-
+                            <div class="team-img">
+                            <img src="img/back/team3.jpg" class="team-img">
+                            </div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 2</div>
-                            <img src="img/back/team 2.jpg" style="width:90%; object-fit: contain;height: 600px;">
-
+                            <div class="team-img">
+                            <img src="img/back/team 2.jpg" class="team-img">
+                            </div>
                         </div>
 
 
@@ -297,7 +299,7 @@
 
 
         <script>
-            const icon_menu = document.getElementById('icon_menu');
+         const icon_menu = document.getElementById('icon_menu');
             icon_menu.onclick = () => {
                 $("#myTopnav").slideDown("slow");
                 document.getElementById('myTopnav').classList.add('active');
@@ -319,7 +321,7 @@
                 if (className === 'topnav') {
                     icon_menu.style.display = 'block'
                 }
-            }        
+            }                    
         </script>
         <script>
             var slideIndex = 1;
