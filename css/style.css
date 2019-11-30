@@ -3,6 +3,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+h1{
+    color: #f38320
+}
 #charity .flex-text-banner h1{
     margin: 0 0 10px 0;
 }
@@ -40,7 +43,6 @@ ul {
 
 .navbar-logo {
     width: 90px;
-    margin-left: 10px;
 }
 
 #div-all-web {
@@ -110,7 +112,9 @@ ul {
 }
 
 li.nav-item {
-    font-size: 16px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .example_e:hover {
@@ -147,13 +151,14 @@ a.example_e {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    height: 55px;
     align-items: center;
     background: #f5f5f5;
     width: 100%;
     position: fixed;
     z-index: 1000;
     border-bottom: 1px solid #cacaca4d;
+    padding: 0px 15px;
 }
 
 .menu-content {
@@ -705,9 +710,7 @@ margin: 0 auto;
         margin-bottom: 30px;
     }
     /* change language */
-    .dual-lang{
-        left: 97px!important;
-    }
+    
   
 }
 /* tablet screen */
@@ -720,6 +723,17 @@ margin: 0 auto;
 @media (max-width: 768px) {
     .navbar navbar-default {
         width: 500px;
+        
+    }
+    .dual-lang{
+        left: 90px!important;
+    }
+    h1{
+        font-size: 25px!important;
+    }
+    
+    .header {
+        padding: 0px 7px;
     }
     .slideshow-container{
         width: 100%;
@@ -727,8 +741,8 @@ margin: 0 auto;
     .team-img{
         width: 100%;
     }
-    .Fonttitle{
-        font-size: 30px;
+    h2{
+        font-size: 40px!important;
     }
     .tieude-2{
         width: 100%;
@@ -770,11 +784,11 @@ margin: 0 auto;
     }
     div#icon_menu { 
         width: 30px;
-        margin-right: 10px;
+     
     }
     #icon_menu {
         display: block!important;
-        margin-right: 2px;
+       
     }
     #myTopnav.active {
         visibility: visible;
@@ -909,7 +923,7 @@ margin: 0 auto;
         width: 80px;
     }
     .footerL.text-center {
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
     }
  
@@ -935,9 +949,7 @@ margin: 0 auto;
  
 } */
 @media (max-width: 410px){
-    #p2p .item{
-        height: 60vh;
-    }
+   
 }
 @media only screen and (max-width: 300px) {
     .prev,
