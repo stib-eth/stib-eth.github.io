@@ -639,11 +639,6 @@ margin: 0 auto;
     width: 100%;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
@@ -708,6 +703,10 @@ margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 30px;
+    }
+    /* change language */
+    .dual-lang{
+        left: 97px!important;
     }
   
 }

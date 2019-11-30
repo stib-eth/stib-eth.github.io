@@ -172,9 +172,10 @@ button.navbar-toggler, button.navbar-toggler-close {
         cursor: pointer;
     }
     .img-lang {
+        margin-bottom: 2px;
         width: 10px;
         height: 10px;
-        margin-left: 5px;
+        margin-left: 3px;
         display: inline-block;
         opacity: 0;
     }
@@ -188,12 +189,20 @@ button.navbar-toggler, button.navbar-toggler-close {
         opacity: 1;
     }
     .img-lang-current.active {
+        margin-bottom: 0%;
         -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
         transform: rotate(0);
     }
     .lang-select.active .img-lang {
         opacity: 1;
+        
+    }
+    .lang-select:hover .img-lang {
+         opacity: 1;
+    }
+    .lang-select.active{
+        opacity: 0.4;
     }
     ul.lang-choice li {
         padding: 7px 0;
