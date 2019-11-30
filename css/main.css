@@ -104,6 +104,10 @@ button.navbar-toggler, button.navbar-toggler-close {
         width: 17px;
         height: 17px;
     }
+    .video{
+        display: flex ; align-items: center; justify-content: center;
+     
+    }
     @font-face {
         font-family: "ubuntu";
         font-style: italic;
@@ -123,7 +127,6 @@ button.navbar-toggler, button.navbar-toggler-close {
         color: #fff;
         font-size:61px;
         font-family: "ubuntu";
-        text-transform: uppercase;
         font-weight: 400;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
         background: linear-gradient(to left, #00fa9a 10%, #b5b5b5 50%, #ff8300 60%);
