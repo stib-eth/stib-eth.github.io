@@ -136,6 +136,7 @@ $(document).ready(function () {
 			$(".link_Pri").html(contact.privacy)
 			$(".tooltip").html("Phóng To")
 			$("#img-future,#img-roadmap-mobile").attr("src","img/back/roadmap-vn.png"); 	
+			$("#link-telegram").attr("href", "https://t.me/StiBvietnam")
 			  
 	}
 	function SetEnLang() {
