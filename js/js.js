@@ -109,6 +109,7 @@ $(document).ready(function () {
 		}
 	});
 	function SetVnLang() {
+	
 		$(".n1").html(header.p2p)
 		$(".n2").html(header.token)
 		$(".n3").html(header.charity)
@@ -123,8 +124,7 @@ $(document).ready(function () {
 		)
 		$(".example_e , .button_e").html("TÌM HIỂU THÊM")
 		$(".tieude-2").html(`<p>'Sti' là tên của Token trong hệ sinh thái của StiB và người giữ token sẽ có
-		quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai.</p>
-			<p>Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội đầu
+		quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai. Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội đầu
 				tư thay vì bị quyết định theo phương thức quay số truyền thống hoặc phải tham
 				gia vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất.
 			</p>`)
@@ -135,7 +135,8 @@ $(document).ready(function () {
 			$(".link_ToS").html(contact.term)
 			$(".link_Pri").html(contact.privacy)
 			$(".tooltip").html("Phóng To")
-			$("#img-future,#img-roadmap-mobile").attr("src","img/back/roadmap-vn.png"); 	
+			$("#img-future,#img-roadmap-mobile").attr("src","img/back/roadmap-vn.png");
+			$("#banner_img").attr("src","img/back/banner pr fb-01.png"); 
 			$("#link-telegram").attr("href", "https://t.me/StiBvietnam")
 			  
 	}
