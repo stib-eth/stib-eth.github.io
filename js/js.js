@@ -32,6 +32,13 @@ $(document).ready(function () {
 		if ($('#topnav').hasClass('active')) {
 			$('#topnav').removeClass('active');
 		}
+		$('body,html').animate({ scrollTop: $('#partners').offset().top }, 500);
+	});
+	$('.n6').click(function (event) {
+		event.preventDefault();
+		if ($('#topnav').hasClass('active')) {
+			$('#topnav').removeClass('active');
+		}
 		$('body,html').animate({ scrollTop: $('#contact').offset().top }, 500);
 	});
 	$('#future .tooltip').click(function (event) {
@@ -71,6 +78,7 @@ $(document).ready(function () {
 			token: "Tokens",
 			charity: "Từ Thiện",
 			team: "Đội Ngũ",
+			partners: "Đối Tác",
 			contact: "Liên Hệ",
 			title: "Giao Dịch (mua/bán + cho vay/mượn) P2P trên Hợp Đồng Thông Minh StiB"
 		},
@@ -79,15 +87,20 @@ $(document).ready(function () {
 			learn: "TÌM HIỂU THÊM",
 			instruction: "Sti' là tên của Token trong hệ sinh thái của StiB và người giữ token sẽ có quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai.Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội đầu tư thay vì bị quyết định theo phương thức quay số truyền thống hoặc phải tham gia vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất. "
 		},
+		partners:
+		{	
+			title : "Đối Tác Kinh Doanh StiB"
+		},
 		contact: {
 			phone: "(+84) 906 097 525",
 			local: "Saigon, Vietnam",
 			term: "Điều Khoản",
 			privacy: "Bảo Mật"
-		}
+		},
 	}
 	var header = Vietnam.header;
 	var token = Vietnam.tokens;
+	var partners = Vietnam.partners;
 	var contact = Vietnam.contact;
 	$(menu1).click(function (e) {
 		if ($("#optionLang").hasClass("active")) {
@@ -114,7 +127,8 @@ $(document).ready(function () {
 		$(".n2").html(header.token)
 		$(".n3").html(header.charity)
 		$(".n4").html(header.team)
-		$(".n5").html(header.contact)
+		$(".n5").html(header.partners)
+		$(".n6").html(header.contact)
 		$(".swap-div").html(
 			`<img src="img/back/banner pr fb-01.png" />
 			<div class="button">
@@ -129,6 +143,8 @@ $(document).ready(function () {
 				gia vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất.
 			</p>`)
 			$(".title-team h1").html("ĐỘI NGŨ")
+			$("#partners1").html("StiB Trên Các Trang Báo")
+			$("#partners2").html("Đối Tác Kinh Doanh StiB")
 			$(".title-contact h1").html("LIÊN HỆ")
 			$("#phone-number").html(" <span>(+84) </span>906 097 525")
 			$(".localvn").html(contact.local) 
@@ -148,9 +164,6 @@ $(document).ready(function () {
 			$("#optionLang").removeClass("active")
 		}
 	})
-
-
-
 
 
 

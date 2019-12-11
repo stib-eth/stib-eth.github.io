@@ -354,8 +354,8 @@ div#future {
 .tieude-2 {
     padding: 24px;
     text-align: justify;
-    background: #fdcb6e;
-    -webkit-box-shadow: darkorange;
+    background: #f38320;
+    -webkit-box-shadow: rgb(15, 15, 15);
     box-shadow: 15px 15px 50px #0000001a;
     /* margin: 30px 0; */
     width: 80%;
@@ -363,7 +363,10 @@ div#future {
 }
 
 .tieude-2 p {
+    justify-content: center;
+    /* text-align: center; */
     color: #fff;
+    text-align: center;
 }
 
 .modal-content {
@@ -579,6 +582,7 @@ body {
 }
 
 img {
+    width: 180px;
     vertical-align: middle;
 }
 
