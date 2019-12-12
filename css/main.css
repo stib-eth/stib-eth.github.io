@@ -182,11 +182,11 @@ button.navbar-toggler, button.navbar-toggler-close {
         justify-content: space-around;
     }
     .flex-wrap2{
+        margin-bottom: 20px;
+        flex-direction: row-reverse;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        max-width: 1200px;
-        margin-bottom:40px ;
         }
         .robi-flex-center {
             display: flex;

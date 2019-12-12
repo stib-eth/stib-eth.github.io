@@ -990,9 +990,12 @@ margin: 0 auto;
 }
 @media(max-width: 320px){
     .probit{
-        height: 145vh;
+        height: 135vh;
     }
     .flex-wrap{
+        padding: 0px;
+    }
+    .flex-wrap2{
         padding: 0px;
     }
     h3#partners1 {
