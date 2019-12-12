@@ -367,6 +367,7 @@ div#future {
     /* text-align: center; */
     color: #fff;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .modal-content {
@@ -972,7 +973,31 @@ margin: 0 auto;
         font-size: 11px;
         text-align: center;
     }
+    .flex-wrap{
+        padding: 0px;
+    }
+    h3#partners2 {
+        padding: 0;
+    }
+    h3#partners1 {
+        padding: 0;
+    }
+    .probit{
+        height: 80vh;
+    }
+   
  
+}
+@media(max-width: 320px){
+    .probit{
+        height: 140vh;
+    }
+    .flex-wrap{
+        padding: 0px;
+    }
+    h3#partners1 {
+        padding: 0;
+    }
 }
 /* @media (max-width: 320px) {
     .header {
@@ -994,9 +1019,7 @@ margin: 0 auto;
     }
  
 } */
-@media (max-width: 410px){
-   
-}
+
 @media only screen and (max-width: 300px) {
     .prev,
     .next {

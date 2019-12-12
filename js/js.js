@@ -87,10 +87,10 @@ $(document).ready(function () {
 			learn: "TÌM HIỂU THÊM",
 			instruction: "Sti' là tên của Token trong hệ sinh thái của StiB và người giữ token sẽ có quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai.Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội đầu tư thay vì bị quyết định theo phương thức quay số truyền thống hoặc phải tham gia vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất. "
 		},
-		partners:
-		{	
-			title : "Đối Tác Kinh Doanh StiB"
-		},
+		// partners:
+		// {	
+		// 	title : "Đối Tác Kinh Doanh StiB"
+		// },
 		contact: {
 			phone: "(+84) 906 097 525",
 			local: "Saigon, Vietnam",
@@ -122,7 +122,7 @@ $(document).ready(function () {
 		}
 	});
 	function SetVnLang() {
-	
+
 		$(".n1").html(header.p2p)
 		$(".n2").html(header.token)
 		$(".n3").html(header.charity)
@@ -136,25 +136,30 @@ $(document).ready(function () {
 				<a href="https://m.stib.co/" class="example_e" target="blank"> TÌM HIỂU THÊM</a>
 			</div>`
 		)
+		$("#video").attr("src", "video/webvn.mp4");
+
+
 		$(".example_e , .button_e").html("TÌM HIỂU THÊM")
-		$(".tieude-2").html(`<p>'Sti' là tên của Token trong hệ sinh thái của StiB và người giữ token sẽ có
-		quyền lợi trong nghiên cứu, dịch vụ và các sản phẩm trong tương lai. Sử dụng nhiều phương pháp thông minh hơn, chủ sở hữu StiB Tokens đều có cơ hội đầu
-				tư thay vì bị quyết định theo phương thức quay số truyền thống hoặc phải tham
-				gia vào trò chơi may rủi mà người thắng cuộc là người nhanh tay nhất.
-			</p>`)
-			$(".title-team h1").html("ĐỘI NGŨ")
-			$("#partners1").html("StiB Trên Các Trang Báo")
-			$("#partners2").html("Đối Tác Kinh Doanh StiB")
-			$(".title-contact h1").html("LIÊN HỆ")
-			$("#phone-number").html(" <span>(+84) </span>906 097 525")
-			$(".localvn").html(contact.local) 
-			$(".link_ToS").html(contact.term)
-			$(".link_Pri").html(contact.privacy)
-			$(".tooltip").html("Phóng To")
-			$("#img-future,#img-roadmap-mobile").attr("src","img/back/roadmap-vn.png");
-			$("#banner_img").attr("src","img/back/banner pr fb-01.png"); 
-			$("#link-telegram").attr("href", "https://t.me/StiBvietnam")
-			  
+		$(".tieude-2").html(`<p>Miễn phí suốt đời cho những nhà đầu tư và người giới thiệu với 5% hoa hồng.
+		 Tài khoản Miễn Phí trên tất cả các dịch vụ bây giờ và tương lai của hệ sinh thái StiB.
+		<h4> Miễn Phí trọn đời:	</h4>	
+		<p>- Nhà đầu tư lúc gọi vốn Cộng Đồng</p>
+		<p>- Người giới thiệu thành công	</p>	
+		</p>`)
+
+		$(".title-team h1").html("ĐỘI NGŨ")
+		$("#partners1").html("StiB Trên Các Trang Báo")
+		$("#partners2").html("Đối Tác Kinh Doanh StiB")
+		$(".title-contact h1").html("LIÊN HỆ")
+		$("#phone-number").html(" <span>(+84) </span>906 097 525")
+		$(".localvn").html(contact.local)
+		$(".link_ToS").html(contact.term)
+		$(".link_Pri").html(contact.privacy)
+		$(".tooltip").html("Phóng To")
+		$("#img-future,#img-roadmap-mobile").attr("src", "img/back/roadmap-vn.png");
+		$("#banner_img").attr("src", "img/back/banner pr fb-01.png");
+		$("#link-telegram").attr("href", "https://t.me/StiBvietnam")
+
 	}
 	function SetEnLang() {
 		location.reload();
@@ -164,9 +169,6 @@ $(document).ready(function () {
 			$("#optionLang").removeClass("active")
 		}
 	})
-
-
-
 })
 for (let index = 0; index < $('.q-li').length; index++) {
 	$('.q-li').eq(index).click(function (event) {
