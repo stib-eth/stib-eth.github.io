@@ -990,7 +990,7 @@ margin: 0 auto;
 }
 @media(max-width: 320px){
     .probit{
-        height: 140vh;
+        height: 150vh;
     }
     .flex-wrap{
         padding: 0px;
