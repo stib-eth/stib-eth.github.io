@@ -51,22 +51,22 @@ $(document).ready(function () {
 	})
 	//  change language 
 	//  get ipa local 
-	// fetch('https://freegeoip.app/json/')
-	// 	.then(res => res.json())
-	// 	.then(json => {
-	// 		const { country_code } = json;
-	// 		if (country_code === 'VN') {
-	// 			$("#currentLang").html(`<span>VN</span> <img src="img/svg/down-arrow.svg" alt=""
-	// 		class="img-lang-current img-lang">`)
-	// 			vnlang.addClass("active");
-	// 			enlang.removeClass("active");
-	// 			SetVnLang();
-	// 		}
-	// 	})
-	// 	.catch(err => {
-	// 		console.log(err);
+	fetch('https://freegeoip.app/json/')
+		.then(res => res.json())
+		.then(json => {
+			const { country_code } = json;
+			if (country_code === 'VN') {
+				$("#currentLang").html(`<span>VN</span> <img src="img/svg/down-arrow.svg" alt=""
+			class="img-lang-current img-lang">`)
+				vnlang.addClass("active");
+				enlang.removeClass("active");
+				SetVnLang();
+			}
+		})
+		.catch(err => {
+			console.log(err);
 
-	// 	})
+		})
 
 
 	const menu1 = $('.dual-lang');
